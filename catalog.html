@@ -5,8 +5,243 @@
     <title>HTML Academy: Глейси: каталог продукции</title>
   </head>
   <body>
-
+    <header>
+      <nav class="main-navigaton">
+        <a href="index.html"><img src="http://placehold.it/150x100" alt="Логотип магазина Глеэйси"></a>
+        <ul class="site-navigation">
+          <li class="site-navigation-curent"><a href="catalog.html">Каталог</a>
+            <ul class="catalog-sub-menu">
+              <li class="sub-menu-spesial"><a href="">Новинки</a></li>
+              <li><a href="">Сливочное</a></li>
+              <li><a href="">Щербеты</a></li>
+              <li><a href="">Фруктовый лед</a></li>
+              <li><a href="">Мелорин</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
+        </ul>
+        <form class="header-search-form" action="https://echo.htmlacademy.ru" method="">
+          <label for="header-search"><span class="visually-hidden">Поиск по сайту</span></label>
+          <input id="header-search" type="search" name="site-search">
+        </form>
+        <div class="dropdown">
+          <ul class="user-navigation">
+            <li><a href=" " class="login-link">Вход</a></li>
+          </ul>
+          <div class="dropdown-content user-login-window">
+            <h2 class="visually-hidden">Форма фхода</h2>
+            <form class="header-search-form" action="https://echo.htmlacademy.ru" method="">
+              <!-- Здесь будет форма -->
+            </form>
+          </div>
+        </div>
+        <div class="dropdown">
+          <p class="user-cart-status cart-status-filled">
+            <a class="user-cart" href="#">2 товара</a>
+          </p>
+          <div class="dropdown-content">
+            <table class="cart-contains">
+              <tr>
+                <td class="cart-contains-image">
+                  <img src="http://placehold.it/150x100" alt="img">
+                </td>
+                <td class="cart-contains-title">
+                  Пломбир с апельсиновым джемом
+                </td>
+                <td class="cart-contains-amount">
+                  1,5 кг x <span>200 руб.</span>
+                </td>
+                <td class="cart-contains-cost">
+                  300 руб.
+                </td>
+                <td>
+                  <button><span class="delete">Удалить</span></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="cart-contains-image">
+                  <img src="http://placehold.it/150x100" alt="img">
+                </td>
+                <td class="cart-contains-title">
+                  Клубничный пломбир с присыпкой из белого шоколада
+                </td>
+                <td class="cart-contains-amount">
+                  1,5 кг x <span>300 руб.</span>
+                </td>
+                <td class="cart-contains-cost">
+                  450 руб.
+                </td>
+                <td>
+                  <button><span class="delete">Удалить</span></button>
+                </td>
+              </tr>
+            </table>
+            <p class="cart-contains-total">
+              Итого: 750руб.
+            </p>
+            <a href="#" class="button">Оформить заказ</a>
+          </div>
+        </div>
+      </nav>
+      <p class="header-contacts-info">
+        <span class="contacts-info-time">С 10 до 20, ежедневно</span>
+        <span class="contacts-info-phone">8 812 450-25-25</span>
+      </p>
+      <div class="user-login-window">
+        <h2 class="visually-hidden">Форма фхода</h2>
+        <form class="header-search-form" action="https://echo.htmlacademy.ru" method="">
+          <!-- Здесь будет форма -->
+        </form>
+      </div>
+    </header>
     
+    <main class="inner-page">
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="">Каталог</a></li>
+        <li class="breadcrumbs-current">Сливочное</li>
+      </ul>
 
+      <h1 class="page-title">Сливочное мороженое</h1>
+
+      <section class="catalog-filter">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="catalog-filet-form" action="https://echo.htmlacademy.ru" method="">
+          <!-- Здесь будет форма для сортировки и фильтрации товаров -->
+        </form>
+      </section>
+
+      <section class="catalog">
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженого">
+            <p class="price">310₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="catalog-item">
+            <h3>Сливочно-кофейное с кусочками шоколада</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженого">
+            <p class="price">380₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="catalog-item">
+            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженого">
+            <p class="price">355₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="catalog-item">
+            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженого">
+            <p class="price">415₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="catalog-item">
+            <h3>Сливочное с брусничным джемом</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженого">
+            <p class="price">325₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="catalog-item">
+            <h3>Сливочно-черничное с цельными ягодами черники</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженого">
+            <p class="price">410₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="catalog-item">
+            <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженого">
+            <p class="price">375₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="catalog-item">
+            <h3>Сливочное с шоколадной стружкой</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженого">
+            <p class="price">320₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="catalog-item">
+            <h3>Сливочно-ванильное с кусочками шоколада</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженого">
+            <p class="price">440₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="catalog-item">
+            <h3>Сливочноe с ментоловым сиропом</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженого">
+            <p class="price">435₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="catalog-item">
+            <h3>Сливочное с кусочками черного шоколада</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженого">
+            <p class="price">355₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="catalog-item">
+            <h3>Сливочное с мятным сиропом</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженого">
+            <p class="price">420₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+        </ul>
+        <div class="catalog-pagination">
+          <button class="pagination-button pagination-button-previous">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current">
+              <a>1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="">3</a>
+            </li>
+            <li class="pagination-item">
+              <a href="">4</a>
+            </li>
+            <li class="pagination-item">
+              <a href="">5</a>
+            </li>
+          </ul>
+          <button class="pagination-button pagination-button-previous">
+            <span class="visually-hidden">Вперёд</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="footer-social">
+        <li>
+          <a href="#" class="social-button social-tv"><span class="visually-hidden">Твиттер</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-button social-in"><span class="visually-hidden">Инстаграм</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-button social-fb"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-button social-vk"><span class="visually-hidden">Вконтакте</span></a>
+        </li>
+      </ul>
+
+      <ul class="footer-references">
+        <li><a class="reference-checked" href="#">Для поставщиков</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+
+      <p class="footer-copirights">
+        <a href="https://htmlacademy.ru/"><img src="http://placehold.it/150x100" alt="Логотип магазина Глеэйси"></a>
+        Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2019
+      </p>
+    </footer>
   </body>
 </html>
