@@ -5,8 +5,192 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+    <header>
+      <nav class="main-navigaton">
+        <a><img src="http://placehold.it/150x100" alt="Логотип магазина Глеэйси"></a>
+        <ul class="site-navigation">
+          <li><a href="catalog.html">Каталог</a>
+            <ul class="catalog-sub-menu">
+              <li class="sub-menu-spesial"><a href="">Новинки</a></li>
+              <li><a href="">Сливочное</a></li>
+              <li><a href="">Щербеты</a></li>
+              <li><a href="">Фруктовый лед</a></li>
+              <li><a href="">Мелорин</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
+        </ul>
+        <form class="header-search-form" action="https://echo.htmlacademy.ru" method="">
+          <label for="header-search"><span class="visually-hidden">Поиск по сайту</span></label>
+          <input id="header-search" type="search" name="site-search">
+        </form>
+        <ul class="user-navigation">
+          <li><a href=" " class="login-link">Вход</a></li>
+        </ul>
+        <p class="user-cart-status">
+          <a href="#" class="user-cart">Пусто</a>
+        </p>
+      </nav>
+      <div class="user-login-window">
+        <h2 class="visually-hidden">Форма фхода</h2>
+        <form class="header-search-form" action="https://echo.htmlacademy.ru" method="">
+          <!-- Здесь будет форма -->
+        </form>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <main>
+      <h1 class="visually-hidden">Интернет-магазин Глэйси</h1>
+
+      <section class="main-promo">
+        <h2 class="visually-hidden">Акции магазина</h2>
+        
+        <!-- Здесь будет промо-слайдер -->
+        
+        <!--
+        <ul class="promo-cards">
+          <li class="promo-card-raspberries">
+            <b>Малинка даром!</b>
+            <p class="promo-card-text">
+            При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+            </p>
+            <a class="button" href="#">Хочу варенье!</a>
+          </li>
+          <li class="promo-card-chocolate">
+            <b>Шоколадки даром!</b>
+            <p class="promo-card-text">
+            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+          </p>
+          <a href="#" class="button">Хочу шоколадки!</a>
+          </li>
+        </ul>
+        -->
+        
+        <!--
+        <ul class="promo-popular">
+          <li class="promo-popular-item">
+            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженного">
+            <p class="price">310₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="promo-popular-item">
+            <h3>Сливочно-кофейное с кусочками шоколада</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженного">
+            <p class="price">380₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="promo-popular-item">
+            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженного">
+            <p class="price">355₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+          <li class="promo-popular-item">
+            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+            <img src="http://placehold.it/150x100" alt="Фото вкусного мороженного">
+            <p class="price">415₽<span class="weight">/кг</span></p>
+            <a href="#">Быстрый просмотр</a>
+          </li>
+        </ul>
+      -->
+      </section>
+      
+      <section class="features">
+        <h2 class="visually-hidden">О нас</h2>
+        <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+        <ul class="features-list">
+          <li class="feature-item">
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+          </li>
+          <li class="feature-item">
+            Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+          </li>
+          <li class="feature-item">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. 
+          </li>
+          <li class="feature-item">
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+          </li>
+        </ul>
+      </section>
+
+      <article class="blog-article">
+        <h2>Новое в нашем блоге</h2>
+        <a href="#">
+          <h3>10 способов сервировки фруктовых щербетов к столу</h3>
+        </a>
+      </article>
+
+      <section class="subscribe">
+        <h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2>
+        <p class="subscribe-text">
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="">
+          <input type="email" placeholder="Электронная почта">
+          <button class="submit">Отправить</button>
+        </form>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visualli-hidden">Наши контакты</h2>
+        <!-- Здесь будет блок с картой и контактами -->
+
+        <!--
+        <div class="our-addres">
+          <p>
+            Адрес главного офиса<br>
+            и офлайн-магазина:<br>
+            <span class="contacts-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+          </p>
+          <p>
+            Для заказов по телефону:<br>
+            <span class="contacts-info">8 812 450-25-25</span><br>
+            (с 10 до 20 ежедневно)
+          </p>
+          <a href="#" class="button">Форма обратной связи</a>
+        </div>
+      -->
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="footer-social">
+        <li>
+          <a href="#" class="social-button social-tv"><span class="visually-hidden">Твиттер</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-button social-in"><span class="visually-hidden">Инстаграм</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-button social-fb"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-button social-vk"><span class="visually-hidden">Вконтакте</span></a>
+        </li>
+      </ul>
+
+      <ul class="footer-references">
+        <li><a class="reference-checked" href="#">Для поставщиков</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+
+      <p class="footer-copirights">
+        <a href="https://htmlacademy.ru/"><img src="http://placehold.it/150x100" alt="Логотип магазина Глеэйси"></a>
+        Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2019
+      </p>
+    </footer>
+    
+    <section class="modal modal-whrite-us">
+      <form class="application-form" action="https://echo.htmlacademy.ru" method="">
+        <!-- Здесь будет форма -->
+      </form>
+      <button class="button" type="submit">Отправить</button>
+    </section>
 
   </body>
 </html>
