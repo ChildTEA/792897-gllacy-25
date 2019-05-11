@@ -13,69 +13,67 @@
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
-        <div class="user-navigation">
-          <form class="header-search-form dropdown-wrapper" action="https://echo.htmlacademy.ru" method="GET">
-            <label class="dropdown">
-              <span class="visually-hidden">Поиск по сайту</span>
-              <input id="header-search" type="search" name="site-search">
-            </label>
-          </form>
-          <div class="dropdown-wrapper">
+        <ul class="user-navigation">
+          <li class="dropdown-wrapper">
+            <form class="header-search-form" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="dropdown">
+                <span class="visually-hidden">Поиск по сайту</span>
+                <input id="header-search" type="search" name="site-search">
+              </label>
+            </form>
+          </li>
+          <li>
             <ul class="user-account">
               <li><a href="#" class="login-link">Вход</a></li>
             </ul>
             <form class="header-login-form dropdown" action="https://echo.htmlacademy.ru" method="POST">
               <!-- Здесь будет форма -->
             </form>
-          </div>
-          <div class="dropdown-wrapper">
-            <p class="user-cart-status">
-              <a href="#" class="user-cart user-cart-filled">2 товара</a>
+          </li>
+          <li class="dropdown-wrapper">
+            <a href="#" class="user-cart user-cart-filled">2 товара</a>
+            <table class="cart-contains dropdown">
+              <tr>
+                <td>
+                  <button class="delete"><span class="visually-hidden">Удалить</span></button>
+                </td>
+                <td class="cart-contains-image">
+                  <img src="http://placehold.it/150x100" alt="img">
+                </td>
+                <td class="cart-contains-title">
+                  Пломбир с апельсиновым джемом
+                </td>
+                <td class="cart-contains-amount">
+                  1,5 кг x <span>200 руб.</span>
+                </td>
+                <td class="cart-contains-cost">
+                  300 руб.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="delete"><span class="visually-hidden">Удалить</span></button>
+                </td>
+                <td class="cart-contains-image">
+                  <img src="http://placehold.it/150x100" alt="img">
+                </td>
+                <td class="cart-contains-title">
+                  Клубничный пломбир с присыпкой из белого шоколада
+                </td>
+                <td class="cart-contains-amount">
+                  1,5 кг x <span>300 руб.</span>
+                </td>
+                <td class="cart-contains-cost">
+                  450 руб.
+                </td>
+              </tr>
+            </table>
+            <p class="cart-contains-total">
+              Итого: 750руб.
             </p>
-            <div class="dropdown">
-              <table class="cart-contains">
-                <tr>
-                  <td>
-                    <button class="delete"><span class="visually-hidden">Удалить</span></button>
-                  </td>
-                  <td class="cart-contains-image">
-                    <img src="http://placehold.it/150x100" alt="img">
-                  </td>
-                  <td class="cart-contains-title">
-                    Пломбир с апельсиновым джемом
-                  </td>
-                  <td class="cart-contains-amount">
-                    1,5 кг x <span>200 руб.</span>
-                  </td>
-                  <td class="cart-contains-cost">
-                    300 руб.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <button class="delete"><span class="visually-hidden">Удалить</span></button>
-                  </td>
-                  <td class="cart-contains-image">
-                    <img src="http://placehold.it/150x100" alt="img">
-                  </td>
-                  <td class="cart-contains-title">
-                    Клубничный пломбир с присыпкой из белого шоколада
-                  </td>
-                  <td class="cart-contains-amount">
-                    1,5 кг x <span>300 руб.</span>
-                  </td>
-                  <td class="cart-contains-cost">
-                    450 руб.
-                  </td>
-                </tr>
-              </table>
-              <p class="cart-contains-total">
-                Итого: 750руб.
-              </p>
-              <a href="#" class="button">Оформить заказ</a>
-            </div>
-          </div>
-        </div>
+            <a href="#" class="button">Оформить заказ</a>
+          </li>
+        </ul>
       </nav>
       <p class="header-contacts-info">
         <span class="contacts-info-time">С 10 до 20, ежедневно</span>

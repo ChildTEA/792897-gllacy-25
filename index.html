@@ -21,27 +21,27 @@
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
-        <div class="user-navigation">
-          <form class="header-search-form dropdown-wrapper" action="https://echo.htmlacademy.ru" method="GET">
-            <label class="dropdown">
-              <span class="visually-hidden">Поиск по сайту</span>
-              <input id="header-search" type="search" name="site-search">
-            </label>
-          </form>
-          <div class="dropdown-wrapper">
+        <ul class="user-navigation">
+          <li class="dropdown-wrapper">
+            <form class="header-search-form" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="dropdown">
+                <span class="visually-hidden">Поиск по сайту</span>
+                <input id="header-search" type="search" name="site-search">
+              </label>
+            </form>
+          </li>
+          <li>
             <ul class="user-account">
               <li><a href="#" class="login-link">Вход</a></li>
             </ul>
             <form class="header-login-form dropdown" action="https://echo.htmlacademy.ru" method="POST">
               <!-- Здесь будет форма -->
             </form>
-          </div>
-          <div class="dropdown-wrapper">
-            <p class="user-cart-status">
-              <a href="#" class="user-cart">Пусто</a>
-            </p>
-          </div>
-        </div>
+          </li>
+          <li>
+            <a href="#" class="user-cart">Пусто</a>
+          </li>
+        </ul>
       </nav>
       <p class="header-contacts-info">
         <span class="contacts-info-time">С 10 до 20, ежедневно</span><br>
