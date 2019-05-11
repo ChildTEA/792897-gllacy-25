@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-      <nav class="main-navigaton">
+      <nav class="main-navigation">
         <a><img src="http://placehold.it/150x100" alt="Логотип магазина Глэйси"></a>
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a>
@@ -21,23 +21,27 @@
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
-        <form class="header-search-form" action="https://echo.htmlacademy.ru" method="GET">
-          <label>
-            <span class="visually-hidden">Поиск по сайту</span>
-            <input id="header-search" type="search" name="site-search">
-          </label>
-        </form>
         <div class="user-navigation">
-          <ul class="user-navigation-list">
-            <li><a href="#" class="login-link">Вход</a></li>
-          </ul>
-          <form class="header-login-form dropdown" action="https://echo.htmlacademy.ru" method="POST">
-            <!-- Здесь будет форма -->
+          <form class="header-search-form dropdown-wrapper" action="https://echo.htmlacademy.ru" method="GET">
+            <label class="dropdown">
+              <span class="visually-hidden">Поиск по сайту</span>
+              <input id="header-search" type="search" name="site-search">
+            </label>
           </form>
+          <div class="dropdown-wrapper">
+            <ul class="user-account">
+              <li><a href="#" class="login-link">Вход</a></li>
+            </ul>
+            <form class="header-login-form dropdown" action="https://echo.htmlacademy.ru" method="POST">
+              <!-- Здесь будет форма -->
+            </form>
+          </div>
+          <div class="dropdown-wrapper">
+            <p class="user-cart-status">
+              <a href="#" class="user-cart">Пусто</a>
+            </p>
+          </div>
         </div>
-        <p class="user-cart-status">
-          <a href="#" class="user-cart">Пусто</a>
-        </p>
       </nav>
       <p class="header-contacts-info">
         <span class="contacts-info-time">С 10 до 20, ежедневно</span><br>
@@ -140,11 +144,11 @@
       </section>
 
       <section class="contacts">
-        <h2 class="visualli-hidden">Наши контакты</h2>
+        <h2 class="visually-hidden">Наши контакты</h2>
         <!-- Здесь будет блок с картой и контактами -->
 
         <!--
-        <div class="our-addres">
+        <div class="our-address">
           <p>
             Адрес главного офиса<br>
             и офлайн-магазина:<br>
@@ -184,7 +188,7 @@
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
 
-      <p class="footer-copirights">
+      <p class="footer-copyrights">
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="Логотип магазина Глэйси"></a>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
       </p>

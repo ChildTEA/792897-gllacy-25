@@ -6,72 +6,74 @@
   </head>
   <body>
     <header>
-      <nav class="main-navigaton">
+      <nav class="main-navigation">
         <a href="index.html"><img src="http://placehold.it/150x100" alt="Логотип магазина Глэйси"></a>
         <ul class="site-navigation">
-          <li class="site-navigation-curent"><a href="catalog.html">Каталог</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
-        <form class="header-search-form" action="https://echo.htmlacademy.ru" method="GET">
-          <label>
-            <span class="visually-hidden">Поиск по сайту</span>
-            <input id="header-search" type="search" name="site-search">
-          </label>
-        </form>
         <div class="user-navigation">
-          <ul class="user-navigation-list">
-            <li><a href="#" class="login-link">Вход</a></li>
-          </ul>
-          <form class="header-login-form dropdown" action="https://echo.htmlacademy.ru" method="POST">
-              <!-- Здесь будет форма -->
+          <form class="header-search-form dropdown-wrapper" action="https://echo.htmlacademy.ru" method="GET">
+            <label class="dropdown">
+              <span class="visually-hidden">Поиск по сайту</span>
+              <input id="header-search" type="search" name="site-search">
+            </label>
           </form>
-        </div>
-        <div class="dropdown">
-          <p class="user-cart-status">
-            <a class="user-cart user-cart-filled" href="#">2 товара</a>
-          </p>
-          <div class="dropdown-content">
-            <table class="cart-contains">
-              <tr>
-                <td>
-                  <button class="delete"><span class="visually-hidden">Удалить</span></button>
-                </td>
-                <td class="cart-contains-image">
-                  <img src="http://placehold.it/150x100" alt="img">
-                </td>
-                <td class="cart-contains-title">
-                  Пломбир с апельсиновым джемом
-                </td>
-                <td class="cart-contains-amount">
-                  1,5 кг x <span>200 руб.</span>
-                </td>
-                <td class="cart-contains-cost">
-                  300 руб.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button class="delete"><span class="visually-hidden">Удалить</span></button>
-                </td>
-                <td class="cart-contains-image">
-                  <img src="http://placehold.it/150x100" alt="img">
-                </td>
-                <td class="cart-contains-title">
-                  Клубничный пломбир с присыпкой из белого шоколада
-                </td>
-                <td class="cart-contains-amount">
-                  1,5 кг x <span>300 руб.</span>
-                </td>
-                <td class="cart-contains-cost">
-                  450 руб.
-                </td>
-              </tr>
-            </table>
-            <p class="cart-contains-total">
-              Итого: 750руб.
+          <div class="dropdown-wrapper">
+            <ul class="user-account">
+              <li><a href="#" class="login-link">Вход</a></li>
+            </ul>
+            <form class="header-login-form dropdown" action="https://echo.htmlacademy.ru" method="POST">
+              <!-- Здесь будет форма -->
+            </form>
+          </div>
+          <div class="dropdown-wrapper">
+            <p class="user-cart-status">
+              <a href="#" class="user-cart user-cart-filled">2 товара</a>
             </p>
-            <a href="#" class="button">Оформить заказ</a>
+            <div class="dropdown">
+              <table class="cart-contains">
+                <tr>
+                  <td>
+                    <button class="delete"><span class="visually-hidden">Удалить</span></button>
+                  </td>
+                  <td class="cart-contains-image">
+                    <img src="http://placehold.it/150x100" alt="img">
+                  </td>
+                  <td class="cart-contains-title">
+                    Пломбир с апельсиновым джемом
+                  </td>
+                  <td class="cart-contains-amount">
+                    1,5 кг x <span>200 руб.</span>
+                  </td>
+                  <td class="cart-contains-cost">
+                    300 руб.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="delete"><span class="visually-hidden">Удалить</span></button>
+                  </td>
+                  <td class="cart-contains-image">
+                    <img src="http://placehold.it/150x100" alt="img">
+                  </td>
+                  <td class="cart-contains-title">
+                    Клубничный пломбир с присыпкой из белого шоколада
+                  </td>
+                  <td class="cart-contains-amount">
+                    1,5 кг x <span>300 руб.</span>
+                  </td>
+                  <td class="cart-contains-cost">
+                    450 руб.
+                  </td>
+                </tr>
+              </table>
+              <p class="cart-contains-total">
+                Итого: 750руб.
+              </p>
+              <a href="#" class="button">Оформить заказ</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -222,7 +224,7 @@
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
 
-      <p class="footer-copirights">
+      <p class="footer-copyrights">
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="Логотип магазина Глэйси"></a>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
       </p>
