@@ -214,7 +214,18 @@
       <h2 class="visually-hidden">Напишите нам</h2>
       <p class="lead">Мы обязательно вам ответим!</p>
       <form class="application-form" action="https://echo.htmlacademy.ru" method="POST">
-        <!-- Здесь будет форма -->
+        <p>
+        <label class="visually-hidden" for="author-name-field">Имя</label>
+        <input id="author-name-field" type="text" name="author-name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="author-email-field">Электронная почта</label>
+          <input id="author-email-field" type="email" name="author-email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="author-message-field">Текст сообщения</label>
+          <textarea id="author-message-field" name="author-message" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
         <button class="button" type="submit">Отправить</button>
       </form>
     </section>
