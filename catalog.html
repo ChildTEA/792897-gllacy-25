@@ -119,7 +119,48 @@
       <section class="catalog-filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="GET">
-          <!-- Здесь будет форма для сортировки и фильтрации товаров -->
+          <fieldset class="filter-group group-sorting">
+            <legend>Сортировка</legend>
+            <select name="catalog-sorting">
+              <option value="popular-first" selected>по популярности</option>
+              <option value="cheat-first">сначала недорогие</option>
+              <option value="expansive-first">сначала дорогие</option>
+              <option value="fat-first">по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset class="filter-group group-cost-range">
+            <legend>
+              Цена: <span class="filter-cost-min">100</span> руб. – <span class="filter-cost-min">500</span> руб.
+            </legend>
+            <div class="filter-range">
+              <!-- Здесь будет фильтр с ползунками -->
+            </div>
+          </fieldset>
+          <fieldset class="filter-group group-fat">
+            <legend>Жирность:</legend>
+            <input id="fat-range-field-0" type="radio" name="fat-range" value="0">
+            <label for="fat-range-field-0">0%</label>
+            <input id="fat-range-field-less10" type="radio" name="fat-range" checked>
+            <label for="fat-range-field-less10">до 10%</label>
+            <input id="fat-range-field-less30" type="radio" name="fat-range">
+            <label for="fat-range-field-less30">до 30%</label>
+            <input id="fat-range-field-more30" type="radio" name="fat-range">
+            <label for="fat-range-field-more30">выше 30%</label>
+          </fieldset>
+          <fieldset class="filter-group group-fill">
+            <legend>Наполнители:</legend>
+            <input id="fill-chocolate-field" type="checkbox" name="fill-chocolate" checked>
+            <label for="fill-chocolate-field">шоколадные</label>
+            <input id="fill-shugar-powder" type="checkbox" name="fill-shugar-powder" checked>
+            <label for="fill-shugar-powder">сахарные присыпки</label>
+            <input id="fill-fruit" type="checkbox" name="fill-fruit">
+            <label for="fill-fruit">фрукты</label>
+            <input id="fill-sirup" type="checkbox" name="fill-sirup">
+            <label for="fill-sirup">сиропы</label>
+            <input id="fill-jam" type="checkbox" name="fill-jam">
+            <label for="fill-jam">джемы</label>
+          </fieldset>
+          <button class="button filter-button" type="submit">Применить</button>
         </form>
       </section>
 
