@@ -36,10 +36,16 @@
           <li class="user-account dropdown-wrapper"><a class="login-link" href="#">Вход</a>
             <form class="header-login-form dropdown" action="https://echo.htmlacademy.ru" method="POST">
               <p>
-                <label>Электронная почта <input type="email" name="login" placeholder="Электронная почта"></label>
+                <label class="visually-hidden" for="login-field">
+                  Электронная почта
+                </label>
+                <input id="login-field" type="email" name="login" placeholder="Электронная почта">
               </p>
               <p>
-                <label>Пароль <input type="email" name="password" placeholder="Пароль"></label>
+                <label class="visually-hidden" for="password-field">
+                  Пароль
+                </label>
+                <input id="password-field" type="email" name="password" placeholder="Пароль">
               </p>
               <button class="button" type="submit">Войти</button>
               <ul class="login-form-links">
@@ -49,7 +55,7 @@
             </form>
           </li>
           <li class="dropdown-wrapper">
-            <a class="user-cart user-cart-filled" href="#">2 товара</a>
+            <a class="user-cart user-cart-filled" aria-label="Корзина" href="#">2 товара</a>
             <div class="user-cart-dropdown dropdown">
               <table class="cart-contains">
                 <tr>
