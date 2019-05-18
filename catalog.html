@@ -11,10 +11,11 @@
           <img src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
         </a>
         <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="catalog.html">Каталог</a>
-            <ul class="catalog-sub-menu">
+          <li class="site-navigation-current" aria-haspopup="true" aria-current="page">
+            <a href="catalog.html">Каталог</a>
+            <ul class="catalog-sub-menu" role="menu">
               <li class="sub-menu-special"><a href="#">Новинки</a></li>
-              <li><a class="sub-menu-current">Сливочное</a></li>
+              <li><a class="sub-menu-current" aria-current="page">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
@@ -54,7 +55,7 @@
               </ul>
             </form>
           </li>
-          <li class="dropdown-wrapper">
+          <li class="dropdown-wrapper" aria-haspopup="true">
             <a class="user-cart user-cart-filled" aria-label="Корзина" href="#">2 товара</a>
             <div class="user-cart-dropdown dropdown">
               <table class="cart-contains">
@@ -111,7 +112,7 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
-        <li class="breadcrumbs-current">Сливочное</li>
+        <li class="breadcrumbs-current" aria-current="page">Сливочное</li>
       </ul>
 
       <h1 class="page-title">Сливочное мороженое</h1>
