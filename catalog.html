@@ -132,11 +132,11 @@
           </fieldset>
           <fieldset class="filter-group group-cost-range">
             <legend>Цена: </legend>
-            <span class="visually-hidden">от</span>
-            <input class="filter-cost-input" type="number" min="0" step="1" value="100">
+            <label for="filter-cost-min" class="visually-hidden">от</label>
+            <input class="filter-cost-input" id="filter-cost-min" type="number" min="0" step="1" value="100">
             <span>руб. – </span>
-            <span class="visually-hidden">до</span>
-            <input class="filter-cost-input" type="number" min="0" step="1" value="500">
+            <label for="filter-cost-max" class="visually-hidden">до</label>
+            <input class="filter-cost-input" id="filter-cost-max" type="number" min="0" step="1" value="500">
             <span> руб.</span>
             <div class="filter-range">
               <!-- Здесь будет фильтр с ползунками -->
