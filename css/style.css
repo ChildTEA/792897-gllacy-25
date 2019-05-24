@@ -134,6 +134,7 @@ a.sub-menu-special {
 
 .user-navigation a:hover,
 .user-navigation a:focus {
+  font-weight: 500;
   color: #000000;
 
   background-color: #ffffff;
@@ -158,6 +159,11 @@ a.sub-menu-special {
 
   background-color: transparent;
   border-bottom: 1px solid #323232;
+}
+
+a.user-cart-filled {
+  color: #323232;
+  background-color: rgba(248, 247, 244, 0.99);
 }
 
 .cart-contains {
@@ -198,32 +204,35 @@ a.sub-menu-special {
   color: inherit;
 }
 
-.promo-popular {
+.promo-popular,
+.catalog-list {
   color: #ffffff;
 
   list-style: none;
 }
 
-.promo-popular h3 {
+.promo-popular h3,
+.catalog-item h3 {
   font-weight: 500;
-
-
 }
 
-.promo-popular-item img {
+.promo-popular-item img,
+.catalog-item img {
   width: 267px;
   height: 267px;
 
   border-radius: 50%;
 }
 
-.promo-popular .price {
+.promo-popular .price,
+.catalog-item .price {
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
 }
 
-.promo-popular .weight {
+.promo-popular .weight,
+.catalog-item .weight {
   font-size: 30px;
 }
 
@@ -250,7 +259,6 @@ a.sub-menu-special {
   line-height: 30px;
 
   background-color: #ffffff;
-  border-radius: 12px;
 }
 
 .blog-article h2 {
@@ -270,10 +278,131 @@ a.sub-menu-special {
 
 .subscribe {
   background-color: #f8f7f4;
-  border-radius: 12px;
+}
+
+/* -- -- -- -- -- Inner page -- -- -- -- -- */
+
+.breadcrumbs {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  list-style: none;
+}
+
+.breadcrumbs,
+.breadcrumbs a {
+  font: inherit;
+  color: #ffffff;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.filter-group {
+  border: none;
+}
+
+.filter-group legend {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+/*.catalog-sorting {*/
+/*  font: inherit;*/
+/*  font-weight: 500;*/
+/*  line-height: 18px;*/
+/*  color: #ffffff;*/
+/*}*/
+
+.filter-group label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.group-fat-list {
+  list-style: none;
+}
+
+.group-fill-list {
+  list-style: none;
+}
+
+.pagination-list {
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 18px;
+  list-style: none;
+}
+
+.pagination-item a {
+  font: inherit;
+  color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-list a:active {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.pagination-item-current a {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.pagination-previous a,
+.pagination-previous a:hover,
+.pagination-previous a:focus,
+.pagination-previous a:active,
+.pagination-next a,
+.pagination-next a:hover,
+.pagination-next a:focus,
+.pagination-next a:active {
+  color: #ffffff;
+
+  background-color: transparent;
+}
+
+.pagination-item .disabled,
+.pagination-item .disabled:hover,
+.pagination-item .disabled:focus,
+.pagination-item .disabled:active {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* -- -- -- -- -- Footer -- -- -- -- -- */
+
+.inner-page .page-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer-social {
+  list-style: none;
+}
+
+.catalog-list {
   list-style: none;
 }
 
