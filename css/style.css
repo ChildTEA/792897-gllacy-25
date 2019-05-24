@@ -331,6 +331,13 @@ a.user-cart-filled {
   border: none;
 }
 
+.group-sorting select:hover,
+.group-sorting select:focus {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
 .group-sorting option {
   font-weight: 400;
   font-size: 14px;
