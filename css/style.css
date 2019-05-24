@@ -321,18 +321,40 @@ a.user-cart-filled {
   color: #ffffff;
 }
 
-/*.catalog-sorting {*/
-/*  font: inherit;*/
-/*  font-weight: 500;*/
-/*  line-height: 18px;*/
-/*  color: #ffffff;*/
-/*}*/
+.group-sorting select {
+  font: inherit;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: rgba(248,247,244, 0.2);
+  border: none;
+}
+
+.group-sorting option {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
 
 .filter-group label {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.group-cost-range,
+.group-cost-range label,
+.group-cost-range input[type="number"] {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
 }
 
 .group-fat-list {
