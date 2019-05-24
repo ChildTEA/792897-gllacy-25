@@ -158,7 +158,16 @@ a.sub-menu-special {
   color: #323232;
 
   background-color: transparent;
-  border-bottom: 1px solid #323232;
+  border-bottom: 1px solid;
+}
+
+.login-form-links a:hover,
+.login-form-links a:focus,
+.login-form-links a:active {
+  font-weight: 400;
+  color: #e84d37;
+
+  background-color: transparent;
 }
 
 a.user-cart-filled {
