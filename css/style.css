@@ -86,9 +86,8 @@ img {
 a.lead {
   font-weight: 700;
   color: #323232;
-
-  border-bottom-width: 2px;
-  border-bottom-color: inherit;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 
 .company-logo {
@@ -394,8 +393,6 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
 .pagination-item-current a:hover,
 .pagination-item-current a:focus {
   color: #323232;
-
-  background-color: #ffffff;
 }
 
 .pagination-previous a,
