@@ -238,9 +238,10 @@ a.lead {
 }
 
 .catalog-item h3 {
-  font-weight: 500;
+  display: inline;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  vertical-align: bottom;
+  font-weight: 500;
 }
 
 .catalog-item img {
