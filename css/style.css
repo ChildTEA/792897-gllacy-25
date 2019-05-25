@@ -156,7 +156,6 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  color: #323232;
 
   background-color: transparent;
   border-bottom-color: rgba(50, 50, 50, 0.3);
@@ -178,7 +177,6 @@ a.user-cart-filled {
 }
 
 .cart-contains {
-  font-weight: 400;
   font-size: 13px;
   line-height: 16px;
 }
