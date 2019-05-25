@@ -12,7 +12,15 @@ a {
   text-decoration: none;
   color: inherit;
 
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #ffbc9e;
+
+  border-bottom-color: rgba(255, 188, 158, 0.3);
 }
 
 img {
@@ -50,6 +58,8 @@ img {
 
 .button:hover,
 .button:focus {
+  color: #fefefe;
+
   background-image: linear-gradient(to top, #ec6f5e 0%, #f58669 100%);
   box-shadow: 0 2px 2px #ac1000;
 }
@@ -153,6 +163,7 @@ a.sub-menu-special {
   color: #323232;
 
   background-color: transparent;
+  border-bottom-color: rgba(50, 50, 50, 0.3);
 }
 
 .login-form-links a:hover,
@@ -162,6 +173,7 @@ a.sub-menu-special {
   color: #e84d37;
 
   background-color: transparent;
+  border-bottom-color: rgba(232, 77, 55, 0.3);
 }
 
 a.user-cart-filled {
@@ -278,6 +290,18 @@ a.user-cart-filled {
   font-size: 24px;
   line-height: 30px;
   color: #323232;
+
+  border-bottom-width: 2px;
+  border-bottom-color: inherit;
+}
+
+.blog-article-lead a:hover,
+.blog-article-lead a:focus,
+.blog-article-lead a:active {
+  color: #e84d37;
+
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(232, 77, 55, 1);
 }
 
 .subscribe {
@@ -392,13 +416,17 @@ a.user-cart-filled {
 
 .pagination-item a:hover,
 .pagination-item a:focus {
+  color: inherit;
+
   background-color: rgba(255, 255, 255, 0.2);
+  border: none;
 }
 
 .pagination-list a:active {
   color: #323232;
 
   background-color: #ffffff;
+  border: none;
 }
 
 .pagination-item-current a,
@@ -465,8 +493,6 @@ a.user-cart-filled {
   font: inherit;
   font-size: 13px;
   line-height: 18px;
-
-  border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
 .footer-references a.reference-accent {
@@ -481,8 +507,6 @@ a.user-cart-filled {
 
 .footer-copyrights a {
   font: inherit;
-  color: #fefefe;
-  border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
 .footer-copyrights a.developer-logo {
@@ -499,5 +523,4 @@ a.user-cart-filled {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-
 }
