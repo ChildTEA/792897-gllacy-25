@@ -445,14 +445,8 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
   color: #fefefe;
 }
 
-.footer-copyrights a.developer-logo {
+.developer-logo {
   border: none;
-}
-
-.modal-write-us {
-  color: #323232;
-
-  background-color: #f8f7f4;
 }
 
 .modal-write-us h2 {
