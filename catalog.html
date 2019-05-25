@@ -128,7 +128,7 @@
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="filter-group group-sorting">
             <legend>Сортировка</legend>
-            <select name="catalog-sorting">
+            <select class="filter-group-select" name="catalog-sorting">
               <option value="sorting-popular" selected>по популярности</option>
               <option value="sorting-cheap">сначала недорогие</option>
               <option value="sorting-expansive">сначала дорогие</option>
@@ -149,20 +149,20 @@
           </fieldset>
           <fieldset class="filter-group group-fat">
             <legend>Жирность:</legend>
-            <ul class="group-fat-list modified-list">
-              <li class="group-fat-item">
+            <ul class="filter-group-radio-list modified-list">
+              <li class="filter-group-radio-item">
                 <input id="fat-range-0" type="radio" name="fat-range" value="0">
                 <label for="fat-range-0">0%</label>
               </li>
-              <li class="group-fat-item">
+              <li class="filter-group-radio-item">
                 <input id="fat-range-less10" type="radio" name="fat-range" checked>
                 <label for="fat-range-less10">до 10%</label>
               </li>
-              <li class="group-fat-item">
+              <li class="filter-group-radio-item">
                 <input id="fat-range-less30" type="radio" name="fat-range">
                 <label for="fat-range-less30">до 30%</label>
               </li>
-              <li class="group-fat-item">
+              <li class="filter-group-radio-item">
                 <input id="fat-range-more30" type="radio" name="fat-range">
                 <label for="fat-range-more30">выше 30%</label>
               </li>
@@ -170,24 +170,24 @@
           </fieldset>
           <fieldset class="filter-group group-fill">
             <legend>Наполнители:</legend>
-            <ul class="group-fill-list modified-list">
-              <li class="group-fill-item">
+            <ul class="filter-group-checkbox-list modified-list">
+              <li class="filter-group-checkbox-item">
                 <input id="fill-chocolate" type="checkbox" name="fill-chocolate" checked>
                 <label for="fill-chocolate">шоколадные</label>
               </li>
-              <li class="group-fill-item">
+              <li class="filter-group-checkbox-item">
                 <input id="fill-sugar-powder" type="checkbox" name="fill-sugar-powder" checked>
                 <label for="fill-sugar-powder">сахарные присыпки</label>
               </li>
-              <li class="group-fill-item">
+              <li class="filter-group-checkbox-item">
                 <input id="fill-fruit" type="checkbox" name="fill-fruit">
                 <label for="fill-fruit">фрукты</label>
               </li>
-              <li class="group-fill-item">
+              <li class="filter-group-checkbox-item">
                 <input id="fill-sirup" type="checkbox" name="fill-sirup">
                 <label for="fill-sirup">сиропы</label>
               </li>
-              <li class="group-fill-item">
+              <li class="filter-group-checkbox-item">
                 <input id="fill-jam" type="checkbox" name="fill-jam">
                 <label for="fill-jam">джемы</label>
               </li>

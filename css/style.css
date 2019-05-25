@@ -317,7 +317,7 @@ a.lead {
   line-height: 16px;
 }
 
-.group-sorting select {
+.filter-group-select {
   font: inherit;
   line-height: 18px;
   color: inherit;
@@ -326,14 +326,14 @@ a.lead {
   border: none;
 }
 
-.group-sorting select:hover,
-.group-sorting select:focus {
+.filter-group-select:hover,
+.filter-group-select:focus {
   color: #323232;
 
   background-color: #ffffff;
 }
 
-.group-sorting option {
+.filter-group-select option {
   font-size: 14px;
   line-height: 16px;
   color: #000000;
