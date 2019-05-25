@@ -298,19 +298,6 @@ a.lead {
   line-height: 16px;
 }
 
-.breadcrumbs,
-.breadcrumbs a {
-  border-bottom-color: rgba(255, 255, 255, 0.3);
-}
-
-.breadcrumbs a:hover,
-.breadcrumbs a:focus,
-.breadcrumbs a:active {
-  color: #ffbc9e;
-
-  border-bottom-color: rgba(255, 188, 158, 0.3);
-}
-
 .page-title {
   font-weight: 700;
   font-size: 35px;
