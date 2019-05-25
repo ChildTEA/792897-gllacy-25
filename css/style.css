@@ -93,10 +93,15 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
   border: none;
 }
 
-.catalog-sub-menu {
+.popup {
+  color: #323232;
+
   background-color: #f8f7f4;
-  list-style: none;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.catalog-sub-menu {
+  list-style: none;
 }
 
 .catalog-sub-menu a {
@@ -145,13 +150,6 @@ a.sub-menu-special {
   background-color: #ffffff;
 }
 
-.header-search-form,
-.header-login-form,
-.user-cart-dropdown {
-  background-color: #f8f7f4;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-}
-
 .login-form-links {
   list-style: none;
 }
@@ -185,7 +183,6 @@ a.user-cart-filled {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  color: #323232;
 }
 
 .cart-contains-image img {
