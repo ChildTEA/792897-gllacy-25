@@ -85,12 +85,20 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
-.site-navigation a:active {
+.site-navigation a:focus {
   color: #000000;
 
   background-color: #ffffff;
   border: none;
+}
+
+.site-navigation a:active {
+  box-shadow: inset 0 2px 1px #696969;
+}
+
+.site-navigation-current > a {
+  border: none;
+  background-color: #d07058;
 }
 
 .popup {
@@ -143,6 +151,10 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.user-navigation-item > a:active {
+  box-shadow: inset 0 2px 1px #696969;
 }
 
 .login-form-links {
