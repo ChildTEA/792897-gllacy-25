@@ -347,7 +347,7 @@ a.lead {
 
 .group-cost-range,
 .group-cost-range label,
-.group-cost-range input[type="number"] {
+.group-cost-range input {
   font-size: 14px;
   line-height: 16px;
   color: inherit;
