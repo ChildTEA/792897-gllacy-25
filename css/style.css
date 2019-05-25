@@ -401,7 +401,9 @@ a.user-cart-filled {
   background-color: #ffffff;
 }
 
-.pagination-item-current a {
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
   color: #323232;
 
   background-color: #ffffff;
