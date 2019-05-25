@@ -63,15 +63,15 @@ img {
   border: none;
 }
 
-.site-navigation a {
-  font-weight: 700;
-  line-height: 18px;
-
-  border-bottom-color: rgba(255, 255, 255, 0.2);
-}
-
 .site-navigation {
   list-style: none;
+}
+
+.site-navigation a {
+font-weight: 700;
+line-height: 18px;
+
+border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
 .site-navigation a:hover,
