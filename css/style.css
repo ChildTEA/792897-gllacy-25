@@ -322,7 +322,7 @@ a.lead {
   line-height: 18px;
   color: inherit;
 
-  background-color: rgba(248,247,244, 0.2);
+  background-color: rgba(248, 247, 244, 0.2);
   border: none;
 }
 
@@ -370,20 +370,20 @@ a.lead {
   color: inherit;
 
   background-color: rgba(255, 255, 255, 0.2);
-  border: none;
 }
 
-.pagination-list a:active {
+.pagination-item a:active {
   color: #323232;
 
   background-color: #ffffff;
-  border: none;
 }
 
 .pagination-item-current a,
 .pagination-item-current a:hover,
 .pagination-item-current a:focus {
   color: #323232;
+
+  background-color: #ffffff;
 }
 
 .pagination-previous a,
