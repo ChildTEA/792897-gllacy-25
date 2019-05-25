@@ -69,12 +69,14 @@ img {
   box-shadow: inset 0 2px 2px #942718;
 }
 
-.company-logo {
-  border: none;
+.modified-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.site-navigation {
-  list-style: none;
+.company-logo {
+  border: none;
 }
 
 .site-navigation a {
@@ -108,10 +110,6 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-.catalog-sub-menu {
-  list-style: none;
-}
-
 .catalog-sub-menu a {
   font-weight: 400;
   font-size: 14px;
@@ -133,9 +131,6 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
   font-weight: 700;
 }
 
-.user-navigation {
-  list-style: none;
-}
 
 .user-navigation-item > a {
   border: none;
@@ -155,10 +150,6 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
 
 .user-navigation-item > a:active {
   box-shadow: inset 0 2px 1px #696969;
-}
-
-.login-form-links {
-  list-style: none;
 }
 
 .login-form-links a {
@@ -223,11 +214,6 @@ a.user-cart-filled {
   border: none;
 }
 
-.promo-popular,
-.catalog-list {
-  list-style: none;
-}
-
 .promo-popular h3,
 .catalog-item h3 {
   font-weight: 500;
@@ -268,10 +254,6 @@ a.user-cart-filled {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
-}
-
-.features-list {
-  list-style: none;
 }
 
 .blog-article {
@@ -320,8 +302,6 @@ a.user-cart-filled {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-
-  list-style: none;
 }
 
 .breadcrumbs,
@@ -398,18 +378,9 @@ a.user-cart-filled {
   border: none;
 }
 
-.group-fat-list {
-  list-style: none;
-}
-
-.group-fill-list {
-  list-style: none;
-}
-
 .pagination-list {
   font-weight: 500;
   line-height: 18px;
-  list-style: none;
 }
 
 .pagination-item a {
@@ -465,14 +436,6 @@ a.user-cart-filled {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.footer-social {
-  list-style: none;
-}
-
-.catalog-list {
-  list-style: none;
-}
-
 .footer-social a {
   font: inherit;
   color: rgba(255, 255, 255, 0.8);
@@ -487,10 +450,6 @@ a.user-cart-filled {
 
 .footer-social a:active {
   color: rgba(255, 255, 255, 0.8);
-}
-
-.footer-references {
-  list-style: none;
 }
 
 .footer-references a {
