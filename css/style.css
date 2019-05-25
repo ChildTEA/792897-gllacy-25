@@ -304,19 +304,21 @@ a.lead {
   line-height: 41px;
 }
 
+.catalog-filter {
+  font-weight: 500;
+}
+
 .filter-group {
   border: none;
 }
 
 .filter-group legend {
-  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 }
 
 .group-sorting select {
   font: inherit;
-  font-weight: 500;
   line-height: 18px;
   color: inherit;
 
@@ -338,7 +340,6 @@ a.lead {
 }
 
 .filter-group label {
-  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -347,7 +348,6 @@ a.lead {
 .group-cost-range,
 .group-cost-range label,
 .group-cost-range input[type="number"] {
-  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: inherit;
