@@ -75,6 +75,22 @@ img {
   padding: 0;
 }
 
+.lead {
+  font: inherit;
+  color: inherit;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+a.lead {
+  font-weight: 700;
+  color: #323232;
+
+  border-bottom-width: 2px;
+  border-bottom-color: inherit;
+}
+
 .company-logo {
   border: none;
 }
@@ -242,36 +258,16 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
   background-image: url("../img/bg-wafer.jpg");
 }
 
-.lead {
-  font: inherit;
-  color: inherit;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-a.lead {
-  font-weight: 700;
-  color: #323232;
-
-  border-bottom-width: 2px;
-  border-bottom-color: inherit;
-}
-
-
-
 .blog-article {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
   color: #323232;
 
   background-color: #ffffff;
 }
 
 .blog-article h2 {
-  font: inherit;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .blog-article-lead a:hover,
