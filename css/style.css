@@ -9,8 +9,9 @@ body {
 }
 
 a {
-  text-decoration: none;
+  font: inherit;
   color: inherit;
+  text-decoration: none;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -76,7 +77,6 @@ img {
 }
 
 .lead {
-  font: inherit;
   color: inherit;
   font-weight: 500;
   font-size: 24px;
@@ -291,8 +291,6 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
 
 .breadcrumbs,
 .breadcrumbs a {
-  font: inherit;
-
   border-bottom-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -369,8 +367,6 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
 .pagination-item a {
-  font: inherit;
-
   border: none;
 }
 
@@ -420,7 +416,6 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
 .footer-social a {
-  font: inherit;
   color: rgba(255, 255, 255, 0.8);
 
   border: none;
@@ -436,7 +431,6 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
 .footer-references a {
-  font: inherit;
   font-size: 13px;
   line-height: 18px;
 }
@@ -449,10 +443,6 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
   font-size: 12px;
   line-height: 18px;
   color: #fefefe;
-}
-
-.footer-copyrights a {
-  font: inherit;
 }
 
 .footer-copyrights a.developer-logo {
