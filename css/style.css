@@ -38,27 +38,22 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
-  text-transform: none;
+  font-family: inherit;
   color: #fefefe;
 
-  background-color: #e84d37;
-  background-image: linear-gradient(to top, rgba(231, 74, 53, 1) 0%, rgba(242, 104, 67, 1) 100%);
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   border: none;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .button:hover,
 .button:focus {
-  background-color: rgba(255, 255, 255, 0.2);
-  background-color: #ffffff;
-  background-image: linear-gradient(to top, rgba(231, 74, 53, 0.8) 0%, rgba(242, 104, 67, 0.8) 100%);
+  background-image: linear-gradient(to top, #ec6f5e 0%, #f58669 100%);
   box-shadow: 0 2px 2px #ac1000;
 }
 
 .button:active {
-  background-color: #000000;
-  background-image: linear-gradient(to top, rgba(231, 74, 53, 0.93) 0%, rgba(242, 104, 67, 0.93) 100%);
+  background-image: linear-gradient(to top, #e1613e 0%, #d74632 100%);
   box-shadow: inset 0 2px 2px #942718;
 }
 
