@@ -171,7 +171,7 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
   border-bottom-color: rgba(232, 77, 55, 0.3);
 }
 
-a.user-cart-filled {
+.user-cart.user-cart-filled {
   color: #323232;
   background-color: rgba(248, 247, 244, 0.99);
 }
@@ -212,14 +212,12 @@ a.user-cart-filled {
   border: none;
 }
 
-.promo-popular h3,
 .catalog-item h3 {
   font-weight: 500;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.promo-popular-item img,
 .catalog-item img {
   width: 267px;
   height: 267px;
@@ -227,14 +225,12 @@ a.user-cart-filled {
   border-radius: 50%;
 }
 
-.promo-popular .price,
 .catalog-item .price {
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
 }
 
-.promo-popular .weight,
 .catalog-item .weight {
   font-size: 30px;
 }
