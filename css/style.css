@@ -105,7 +105,7 @@ a.lead {
 .site-navigation-item > a:focus {
   color: #000000;
 
-  background-color: #ffffff;
+  background-color: #f8f7f4;
   border: none;
 }
 
@@ -167,7 +167,7 @@ a.lead {
 .user-navigation-item > a:focus {
   color: #000000;
 
-  background-color: #ffffff;
+  background-color: #f8f7f4;
 }
 
 .user-navigation-item > a:active {
@@ -193,7 +193,12 @@ a.lead {
 
 .user-cart.user-cart-filled {
   color: #323232;
-  background-color: rgba(248, 247, 244, 0.99);
+  background-color: #f8f7f4;
+}
+
+.user-cart.user-cart-filled:hover,
+.user-cart.user-cart-filled:focus {
+  color: #323232;
 }
 
 .cart-contains {
