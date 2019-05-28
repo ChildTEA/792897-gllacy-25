@@ -146,7 +146,8 @@ a.lead {
   font-weight: 700;
 }
 
-.sub-menu-current {
+.sub-menu-current,
+.sub-menu-current:hover:not([href]) {
   color: #ffffff;
   background-color: #d07058;
 }
