@@ -12,6 +12,7 @@ a {
   text-decoration: none;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-decoration-skip-ink: none;
 }
 
 a:hover,
@@ -84,7 +85,6 @@ img {
 a.lead {
   font-weight: 700;
   text-decoration: underline;
-  text-decoration-skip-ink: none;
 }
 
 .popup {
