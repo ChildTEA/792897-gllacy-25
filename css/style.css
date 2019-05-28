@@ -50,7 +50,7 @@ img {
   font-family: inherit;
   color: #fefefe;
 
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
   border: none;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
@@ -59,12 +59,12 @@ img {
 .button:focus {
   color: #fefefe;
 
-  background-image: linear-gradient(to top, #ec6f5e 0%, #f58669 100%);
+  background-image: linear-gradient(to top, #ec6f5e, #f58669);
   box-shadow: 0 2px 2px #ac1000;
 }
 
 .button:active {
-  background-image: linear-gradient(to top, #e1613e 0%, #d74632 100%);
+  background-image: linear-gradient(to top, #e1613e, #d74632);
   box-shadow: inset 0 2px 2px #942718;
 }
 
