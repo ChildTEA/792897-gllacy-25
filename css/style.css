@@ -142,11 +142,11 @@ a.lead {
   background-color: #f6b5a5;
 }
 
-.catalog-sub-menu .sub-menu-special {
+.sub-menu-special {
   font-weight: 700;
 }
 
-.catalog-sub-menu .sub-menu-current {
+.sub-menu-current {
   color: #ffffff;
   background-color: #d07058;
 }
