@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
+    <header class="page-header container">
       <nav class="main-navigation">
         <a class="company-logo" aria-current="page">
           <img src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
@@ -72,56 +72,57 @@
       </div>
     </header>
 
-    <main>
+    <main class="container">
       <h1 class="visually-hidden">Интернет-магазин Глэйси</h1>
 
       <section class="main-promo">
         <h2 class="visually-hidden">Акции магазина</h2>
         
         <!-- Здесь будет промо-слайдер -->
-        
-        <!--
-        <ul class="promo-cards modified-list">
-          <li class="promo-card-raspberries">
+        <section class="promo-slider">
+
+        </section>
+
+        <!-- <ul class="promo-cards modified-list layout-columns">
+          <li class="promo-card-raspberries layout-column">
             <b>Малинка даром!</b>
             <p class="promo-card-text">
             При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
             </p>
             <a class="button" href="#">Хочу варенье!</a>
           </li>
-          <li class="promo-card-chocolate">
+          <li class="promo-card-chocolate layout-column">
             <b>Шоколадки даром!</b>
             <p class="promo-card-text">
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
           <a href="#" class="button">Хочу шоколадки!</a>
           </li>
-        </ul>
-        -->
+        </ul> -->
 
         <ul class="catalog-list modified-list">
           <li class="catalog-item catalog-item-hit">
-            <a href="#"><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>
-            <img src="img/promo-hits-1.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/promo-hits-1.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">310₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item catalog-item-hit">
-            <a href="#"><h3>Сливочно-кофейное с кусочками шоколада</h3></a>
-            <img src="img/promo-hits-2.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/promo-hits-2.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">380₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item catalog-item-hit">
-            <a href="#"><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></a>
-            <img src="img/promo-hits-3.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/promo-hits-3.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">355₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item catalog-item-hit">
-            <a href="#"><h3>Сливочное крем-брюле с карамельной подливкой</h3></a>
-            <img src="img/promo-hits-4.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/promo-hits-4.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">415₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
@@ -146,23 +147,25 @@
         </ul>
       </section>
 
-      <article class="blog-article">
-        <h2>Новое в нашем блоге</h2>
-        <p class="blog-article-lead">
-          <a class="lead" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-        </p>
-      </article>
+      <div class="layout-columns">
+        <article class="blog-article layout-column">
+          <h2>Новое в нашем блоге</h2>
+          <p class="blog-article-lead">
+            <a class="lead" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          </p>
+        </article>
 
-      <section class="subscribe">
-        <h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2>
-        <p class="subscribe-text">
-          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-        </p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
-          <input type="email" placeholder="Электронная почта" required>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-      </section>
+        <section class="subscribe layout-column">
+          <h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2>
+          <p class="subscribe-text">
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+          </p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
+            <input type="email" placeholder="Электронная почта" required>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
 
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
@@ -186,7 +189,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <ul class="footer-social modified-list">
         <li>
           <a class="social-button social-tv" href="#"><span class="visually-hidden">Твиттер</span></a>
@@ -211,7 +214,7 @@
 
       <p class="footer-copyrights">
         <a class="developer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy-small.svg" width="114" height="39" alt="Логотип компании HTML Academy">
+          <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип компании HTML Academy">
         </a>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
       </p>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="inner-page">
-    <header>
+    <header class="page-header container">
       <nav class="main-navigation">
         <a class="company-logo" href="index.html">
           <img src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
@@ -114,7 +114,7 @@
       </div>
     </header>
     
-    <main>
+    <main class="container">
       <ul class="breadcrumbs modified-list">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
@@ -126,8 +126,9 @@
       <section class="catalog-filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset class="filter-group group-sorting">
-            <legend>Сортировка</legend>
+          <div class="flex-wrapper">
+            <fieldset class="filter-group group-sorting">
+            <legend>Сортировка:</legend>
             <select class="filter-group-select" name="catalog-sorting">
               <option value="sorting-popular" selected>по популярности</option>
               <option value="sorting-cheap">сначала недорогие</option>
@@ -135,7 +136,9 @@
               <option value="sorting-fat">по жирности</option>
             </select>
           </fieldset>
-          <fieldset class="filter-group group-cost-range">
+          </div>
+          <div class="flex-wrapper">
+            <fieldset class="filter-group group-cost-range">
             <legend>Цена: </legend>
             <label for="filter-cost-min" class="visually-hidden">от</label>
             <input class="filter-cost-input" id="filter-cost-min" type="number" name="cost-range-min" min="0" step="1" value="100">
@@ -147,7 +150,9 @@
               <!-- Здесь будет фильтр с ползунками -->
             </div>
           </fieldset>
-          <fieldset class="filter-group group-fat">
+          </div>
+          <div class="flex-wrapper">
+            <fieldset class="filter-group group-fat">
             <legend>Жирность:</legend>
             <ul class="filter-group-radio-list modified-list">
               <li class="filter-group-radio-item">
@@ -168,7 +173,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-group group-fill">
+          </div>
+          <div class="flex-wrapper">
+            <fieldset class="filter-group group-fill">
             <legend>Наполнители:</legend>
             <ul class="filter-group-checkbox-list modified-list">
               <li class="filter-group-checkbox-item">
@@ -193,7 +200,8 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button filter-button" type="submit">Применить</button>
+          </div>
+          <button class="button-light" type="submit">Применить</button>
         </form>
       </section>
 
@@ -201,78 +209,79 @@
         <h2 class="visually-hidden">Каталог продукции</h2>
         <ul class="catalog-list modified-list">
           <li class="catalog-item">
-            <a href="#"><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>
-            <img src="img/catalog-1.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/catalog-1.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">310₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
-            <a href="#"><h3>Сливочно-кофейное с кусочками шоколада</h3></a>
-            <img src="img/catalog-2.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/catalog-2.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">380₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
-            <a href="#"><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></a>
-            <img src="img/catalog-3.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/catalog-3.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">355₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
-            <a href="#"><h3>Сливочное крем-брюле с карамельной подливкой</h3></a>
-            <img src="img/catalog-4.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/catalog-4.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">415₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
-            <a href="#"><h3>Сливочное с брусничным джемом</h3></a>
-            <img src="img/catalog-5.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/catalog-5.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">325₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочное с брусничным джемом</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
-            <a href="#"><h3>Сливочно-черничное с цельными ягодами черники</h3></a>
-            <img src="img/catalog-6.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/catalog-6.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">410₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
-            <a href="#"><h3>Сливочно-лимонное с карамельной присыпкой</h3></a>
-            <img src="img/catalog-7.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/catalog-7.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">375₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
-            <a href="#"><h3>Сливочное с шоколадной стружкой</h3></a>
-            <img src="img/catalog-8.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/catalog-8.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">320₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
-            <a href="#"><h3>Сливочно-ванильное с кусочками шоколада</h3></a>
-            <img src="img/catalog-9.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/catalog-9.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">440₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
-            <a href="#"><h3>Сливочноe с ментоловым сиропом</h3></a>
-            <img src="img/catalog-10.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/catalog-10.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">435₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочноe с ментоловым сиропом</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
-            <a href="#"><h3>Сливочное с кусочками черного шоколада</h3></a>
-            <img src="img/catalog-11.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/catalog-11.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">355₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
-            <a href="#"><h3>Сливочное с мятным сиропом</h3></a>
-            <img src="img/catalog-12.jpg" width="267" height="267" alt="Фото вкусного мороженого">
+            <img src="img/catalog-12.png" width="267" height="267" alt="Фото вкусного мороженого">
             <p class="price">420₽<span class="weight">/кг</span></p>
+            <h3><a href="#">Сливочное с мятным сиропом</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
+
         <ul class="pagination-list modified-list">
           <li class="pagination-item pagination-previous">
             <a class="disabled"><span class="visually-hidden">Назад</span></a>
@@ -299,7 +308,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <ul class="footer-social modified-list">
         <li>
           <a class="social-button social-tv" href="#"><span class="visually-hidden">Твиттер</span></a>
