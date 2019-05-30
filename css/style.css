@@ -196,10 +196,6 @@ a.lead {
   box-shadow: none;
 }
 
-.user-navigation {
-  margin-left: auto;
-}
-
 .catalog-sub-menu {
   font-size: 14px;
   line-height: 16px;
@@ -228,6 +224,10 @@ a.lead {
 .sub-menu-current:not([href]):hover {
   color: #ffffff;
   background-color: #d07058;
+}
+
+.user-navigation {
+  margin-left: auto;
 }
 
 .user-navigation-item > a {
@@ -302,10 +302,6 @@ a.lead {
 .header-contacts-info {
   position: absolute;
   right: 27px;
-  /*bottom: 0;*/
-  /*max-width: 200px;*/
-  /*margin-left: auto;*/
-  /*margin-right: 0;*/
 
   font-weight: 700;
   font-size: 14px;
@@ -486,10 +482,6 @@ a.lead {
   border: none;
 }
 
-.group-cost-range .filter-range {
-  width: 22px;
-}
-
 .pagination-list {
   width: 300px;
   margin-left: auto;
@@ -615,8 +607,4 @@ a.lead {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-}
-
-.modal-write-us .lead {
-  margin: 0;
 }
