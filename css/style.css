@@ -135,8 +135,8 @@ a.lead {
 .container {
   position: relative;
   width: 1146px;
-  margin: 0px auto;
-  padding: 0px 27px;
+  margin: 0 auto;
+  padding: 0 27px;
 }
 
 .layout-columns {
@@ -343,7 +343,7 @@ a.lead {
 }
 
 .catalog-item h3 {
-  padding: 0px  10px;
+  padding: 0  10px;
 
   font-size: inherit;
   vertical-align: bottom;
