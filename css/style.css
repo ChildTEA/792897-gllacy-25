@@ -149,9 +149,6 @@ a.lead {
 .layout-column {
   box-sizing: border-box;
   width: 560px;
-  padding: 10px 20px;
-
-  border-radius: 14px;
 }
 
 .page-header {
@@ -380,9 +377,12 @@ a.lead {
 }
 
 .blog-article {
+  padding: 10px 20px;
+
   color: #323232;
 
   background-color: #ffffff;
+  border-radius: 14px;
 }
 
 .blog-article h2 {
@@ -398,9 +398,12 @@ a.lead {
 }
 
 .subscribe {
+  padding: 10px 20px;
+
   color: #5a5a5a;
 
   background-color: #f8f7f4;
+  border-radius: 14px;
 }
 
 .contacts-map {
