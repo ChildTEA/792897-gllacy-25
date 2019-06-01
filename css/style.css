@@ -1,6 +1,5 @@
 body {
   min-width: 1200px;
-  margin: 0 auto;
 
   font-size: 16px;
   line-height: 22px;
@@ -406,6 +405,11 @@ a.lead {
   background-color: #f8f7f4;
 }
 
+.contacts-map {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* -- -- -- -- -- Inner page -- -- -- -- -- */
 
 .breadcrumbs {
@@ -416,7 +420,6 @@ a.lead {
 }
 
 .page-title {
-  margin: 0;
   margin-bottom: 26px;
 
   font-weight: 700;
