@@ -126,8 +126,7 @@
       <section class="catalog-filter container">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="GET">
-          <div class="flex-wrapper">
-            <fieldset class="filter-group group-sorting">
+          <fieldset class="filter-group group-sorting">
             <legend>Сортировка:</legend>
             <select class="filter-group-select" name="catalog-sorting">
               <option value="sorting-popular" selected>по популярности</option>
@@ -136,9 +135,7 @@
               <option value="sorting-fat">по жирности</option>
             </select>
           </fieldset>
-          </div>
-          <div class="flex-wrapper">
-            <fieldset class="filter-group group-cost-range">
+          <fieldset class="filter-group group-cost-range">
             <legend>Цена: </legend>
             <label for="filter-cost-min" class="visually-hidden">от</label>
             <input class="filter-cost-input" id="filter-cost-min" type="number" name="cost-range-min" min="0" step="1" value="100">
@@ -150,9 +147,7 @@
               <!-- Здесь будет фильтр с ползунками -->
             </div>
           </fieldset>
-          </div>
-          <div class="flex-wrapper">
-            <fieldset class="filter-group group-fat">
+          <fieldset class="filter-group group-fat">
             <legend>Жирность:</legend>
             <ul class="filter-group-radio-list modified-list">
               <li class="filter-group-radio-item">
@@ -173,9 +168,7 @@
               </li>
             </ul>
           </fieldset>
-          </div>
-          <div class="flex-wrapper">
-            <fieldset class="filter-group group-fill">
+          <fieldset class="filter-group group-fill">
             <legend>Наполнители:</legend>
             <ul class="filter-group-checkbox-list modified-list">
               <li class="filter-group-checkbox-item">
@@ -200,7 +193,6 @@
               </li>
             </ul>
           </fieldset>
-          </div>
           <button class="button-light" type="submit">Применить</button>
         </form>
       </section>
