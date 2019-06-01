@@ -135,8 +135,6 @@ a.lead {
 }
 
 .container {
-  position: relative;
-
   width: 1146px;
   margin: 0 auto;
 }
@@ -302,8 +300,6 @@ a.lead {
 }
 
 .header-contacts-info {
-  position: absolute;
-  right: 27px;
 
   font-weight: 700;
   font-size: 14px;
