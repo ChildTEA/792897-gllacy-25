@@ -118,6 +118,8 @@ img {
 a.lead {
   font-weight: 700;
   text-decoration: underline;
+
+  border: none;
 }
 
 .popup {
