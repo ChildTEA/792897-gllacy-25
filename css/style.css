@@ -571,6 +571,7 @@ a.lead {
 .footer-social a:hover,
 .footer-social a:focus {
   color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .footer-social a:active {
