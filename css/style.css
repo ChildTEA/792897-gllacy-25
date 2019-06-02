@@ -299,7 +299,6 @@ a.lead {
 }
 
 .header-contacts-info {
-
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -328,6 +327,7 @@ a.lead {
 .catalog-item {
   width: 267px;
   margin-right: 26px;
+
   text-align: center;
 }
 
@@ -372,7 +372,6 @@ a.lead {
 
   background-color: #e9dbbe;
   background-image: url("../img/bg-wafer.jpg");
-
   border-radius: 14px;
 }
 
