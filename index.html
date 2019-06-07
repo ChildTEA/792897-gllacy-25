@@ -14,55 +14,80 @@
           <img src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
         </a>
         <ul class="site-navigation modified-list">
-          <li class="site-navigation-item">
-            <a href="catalog.html">Каталог</a>
+          <li class="site-navigation-item dropdown-wrapper">
+            <a class="site-navigation-link" href="catalog.html"><span>Каталог</span></a>
             <ul class="catalog-sub-menu popup modified-list">
-              <li><a class="sub-menu-special" href="#">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
+              <li class="catalog-sub-menu-item">
+                <a class="sub-menu-special" href="#">Новинки</a>
+              </li>
+              <li class="catalog-sub-menu-item">
+                <a href="catalog.html">Сливочное</a>
+              </li>
+              <li class="catalog-sub-menu-item">
+                <a href="#">Щербеты</a>
+              </li>
+              <li class="catalog-sub-menu-item">
+                <a href="#">Фруктовый лед</a>
+              </li>
+              <li class="catalog-sub-menu-item">
+                <a href="#">Мелорин</a>
+              </li>
             </ul>
           </li>
-          <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
-          <li class="site-navigation-item"><a href="#">О Компании</a></li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#"><span>Доставка и оплата</span></a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#"><span>О Компании</span></a>
+          </li>
         </ul>
         <ul class="user-navigation modified-list">
           <li class="user-navigation-item search-item dropdown-wrapper">
-            <a href="#"><span class="visually-hidden">Поиск по сайту</span></a>
+            <a class="user-navigation-link search-link" href="#">
+              <svg class="user-navigation-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17"><path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+              <span class="visually-hidden">Поиск по сайту</span>
+            </a>
             <form class="header-search-form popup dropdown" action="https://echo.htmlacademy.ru" method="GET">
               <p>
                 <label class="visually-hidden" for="site-search-field">
                   Поиск по сайту
                 </label>
-                <input id="site-search-field" type="search" name="site-search" placeholder="Что ищем?">
+                <input class="form-input" id="site-search-field" type="search" name="site-search" placeholder="Что ищем?">
               </p>
             </form>
           </li>
           <li class="user-navigation-item user-account dropdown-wrapper">
-            <a class="login-link" href="#">Вход</a>
+            <a class="user-navigation-link login-link" href="#">
+              <svg class="user-navigation-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="19"><g fill="#FFF"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+              <span>Вход</span>
+            </a>
             <form class="header-login-form popup dropdown" action="https://echo.htmlacademy.ru" method="POST">
               <p>
                 <label class="visually-hidden" for="login-field">
                   Электронная почта
                 </label>
-                <input id="login-field" type="email" name="login" placeholder="Электронная почта" required>
+                <input class="form-input" id="login-field" type="email" name="login" placeholder="Электронная почта" required>
               </p>
               <p>
                 <label class="visually-hidden" for="password-field">
                   Пароль
                 </label>
-                <input id="password-field" type="password" name="password" placeholder="Пароль" required>
+                <input class="form-input" id="password-field" type="password" name="password" placeholder="Пароль" required>
               </p>
-              <button class="button" type="submit">Войти</button>
-              <ul class="login-form-links modified-list">
-                <li><a href="#">Забыли пароль?</a></li>
-                <li><a href="#">Новая регистрация</a></li>
-              </ul>
+              <div class="layout-columns">
+                <button class="button" type="submit">Войти</button>
+                <ul class="login-form-links modified-list">
+                  <li><a href="#">Забыли пароль?</a></li>
+                  <li><a href="#">Новая регистрация</a></li>
+                </ul>
+              </div>
             </form>
           </li>
           <li class="user-navigation-item">
-            <a class="user-cart" aria-label="Корзина" href="#">Пусто</a>
+            <a class="user-navigation-link user-cart" aria-label="Корзина" href="#">
+              <svg class="user-navigation-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
+              <span>Пусто</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -102,26 +127,34 @@
 
         <ul class="catalog-list modified-list container">
           <li class="catalog-item catalog-item-hit">
-            <img src="img/promo-hits-1.png" width="267" height="267" alt="Фото вкусного мороженого">
-            <p class="price">310₽<span class="weight">/кг</span></p>
+            <p class="catalog-item-image">
+              <img src="img/promo-hits-1.png" width="267" height="267" alt="Фото вкусного мороженого">
+            </p>
+            <p class="price">310<span class="cost">₽<span class="weight">/кг</span></span></p>
             <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item catalog-item-hit">
-            <img src="img/promo-hits-2.png" width="267" height="267" alt="Фото вкусного мороженого">
-            <p class="price">380₽<span class="weight">/кг</span></p>
+            <p class="catalog-item-image">
+              <img src="img/promo-hits-2.png" width="267" height="267" alt="Фото вкусного мороженого">
+            </p>
+            <p class="price">380<span class="cost">₽<span class="weight">/кг</span></span></p>
             <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item catalog-item-hit">
-            <img src="img/promo-hits-3.png" width="267" height="267" alt="Фото вкусного мороженого">
-            <p class="price">355₽<span class="weight">/кг</span></p>
+            <p class="catalog-item-image">
+              <img src="img/promo-hits-3.png" width="267" height="267" alt="Фото вкусного мороженого">
+            </p>
+            <p class="price">355<span class="cost">₽<span class="weight">/кг</span></span></p>
             <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item catalog-item-hit">
-            <img src="img/promo-hits-4.png" width="267" height="267" alt="Фото вкусного мороженого">
-            <p class="price">415₽<span class="weight">/кг</span></p>
+            <p class="catalog-item-image">
+              <img src="img/promo-hits-4.png" width="267" height="267" alt="Фото вкусного мороженого">
+            </p>
+            <p class="price">415<span class="cost">₽<span class="weight">/кг</span></span></p>
             <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
@@ -130,10 +163,10 @@
       
       <section class="features container">
         <h2 class="visually-hidden">О нас</h2>
-        <b class="lead">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+        <p class="lead">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul class="features-list modified-list">
           <li class="features-item features-item-ice-cream">
-            Все наше мороженое изготавливается
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </li>
           <li class="features-item features-item-cow">
             Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
@@ -150,19 +183,19 @@
       <div class="layout-columns container">
         <article class="blog-article layout-column">
           <h2>Новое в нашем блоге</h2>
-          <p class="blog-article-lead">
+          <p class="blog-article-title">
             <a class="lead" href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </p>
         </article>
 
-        <section class="subscribe layout-column">
+        <section class="subscribe post-style layout-column">
           <h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2>
           <p class="subscribe-text">
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
-            <input type="email" placeholder="Электронная почта" required>
-            <button class="button" type="submit">Отправить</button>
+            <input class="subscribe-form-email form-input" type="email" placeholder="Электронная почта" required>
+            <button class="subscribe-submit button" type="submit">Отправить</button>
           </form>
         </section>
       </div>
@@ -171,11 +204,11 @@
         <h2 class="visually-hidden container">Наши контакты</h2>
         <!-- Здесь будет блок с картой и контактами -->
 
-        <!--
-        <div class="contacts-map">
+
+        <p class="contacts-map">
           <img src="../img/map-office.jpg" width="1200" height="430" alt="Адрес головного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург.">
-        </div>
-        -->
+        </p>
+
 
         <!--
         <div class="our-address">
@@ -198,25 +231,50 @@
     <footer class="page-footer container">
       <ul class="footer-social modified-list">
         <li>
-          <a class="social-button social-tv" href="#"><span class="visually-hidden">Твиттер</span></a>
+          <a class="social-button social-tv" href="#">
+            <span class="visually-hidden">Твиттер</span>
+            <img src="../img/social-tw.svg" alt="Твиттер">
+          </a>
         </li>
         <li>
-          <a class="social-button social-in" href="#"><span class="visually-hidden">Инстаграм</span></a>
+          <a class="social-button social-in" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+            <img src="../img/social-in.svg" alt="">
+          </a>
         </li>
         <li>
-          <a class="social-button social-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+          <a class="social-button social-fb" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+            <img src="../img/social-fb.svg" alt="Фейсбук">
+          </a>
         </li>
         <li>
-          <a class="social-button social-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+          <a class="social-button social-vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+            <img src="../img/social-vk.svg" alt="Вконтакте">
+          </a>
         </li>
       </ul>
 
-      <ul class="footer-references modified-list">
-        <li><a class="reference-accent" href="#">Для поставщиков</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
+
+      <div class="footre-references-wraper">
+        <ul class="footer-references modified-list">
+          <li class="footer-references-item">
+            <a class="footer-references-link reference-accent" href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-references-item">
+            <a class="footer-references-link" href="#">О производстве</a>
+          </li>
+        </ul>
+        <ul class="footer-references modified-list">
+          <li class="footer-references-item">
+            <a class="footer-references-link" href="#">Наши документы</a>
+          </li>
+          <li class="footer-references-item">
+            <a class="footer-references-link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
 
       <p class="footer-copyrights">
         <a class="developer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -232,11 +290,11 @@
       <form class="application-form" action="https://echo.htmlacademy.ru" method="POST">
         <p>
         <label class="visually-hidden" for="author-name-field">Имя</label>
-        <input id="author-name-field" type="text" name="author-name" placeholder="Как вас зовут?">
+        <input class="form-input" id="author-name-field" type="text" name="author-name" placeholder="Как вас зовут?">
         </p>
         <p>
           <label class="visually-hidden" for="author-email-field">Электронная почта</label>
-          <input id="author-email-field" type="email" name="author-email" placeholder="Ваша почта для ответа?">
+          <input class="form-input" id="author-email-field" type="email" name="author-email" placeholder="Ваша почта для ответа?">
         </p>
         <p>
           <label class="visually-hidden" for="author-message-field">Текст сообщения</label>
