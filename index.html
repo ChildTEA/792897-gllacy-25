@@ -127,6 +127,7 @@
 
         <ul class="catalog-list modified-list container">
           <li class="catalog-item catalog-item-hit">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/promo-hits-1.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -135,6 +136,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item catalog-item-hit">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/promo-hits-2.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -143,6 +145,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item catalog-item-hit">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/promo-hits-3.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -151,6 +154,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item catalog-item-hit">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/promo-hits-4.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -284,25 +288,32 @@
       </p>
     </footer>
     
-    <section class="modal modal-write-us popup">
-      <h2 class="visually-hidden">Напишите нам</h2>
-      <p class="lead">Мы обязательно вам ответим!</p>
-      <form class="application-form" action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-        <label class="visually-hidden" for="author-name-field">Имя</label>
-        <input class="form-input" id="author-name-field" type="text" name="author-name" placeholder="Как вас зовут?">
-        </p>
-        <p>
-          <label class="visually-hidden" for="author-email-field">Электронная почта</label>
-          <input class="form-input" id="author-email-field" type="email" name="author-email" placeholder="Ваша почта для ответа?">
-        </p>
-        <p>
-          <label class="visually-hidden" for="author-message-field">Текст сообщения</label>
-          <textarea id="author-message-field" name="author-message" placeholder="Напишите что-нибудь..." required></textarea>
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-    </section>
+    <div class="modal-overlay">
+      <section class="modal modal-write-us popup container">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <p class="lead">Мы обязательно вам ответим!</p>
+        <form class="application-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="application-form-input-string">
+            <label class="visually-hidden" for="author-name-field">Имя</label>
+            <input class="application-form-input form-input" id="author-name-field" type="text" name="author-name" placeholder="Как вас зовут?">
+          </p>
+          <p class="application-form-input-string">
+            <label class="visually-hidden" for="author-email-field">Электронная почта</label>
+            <input class="application-form-input form-input" id="author-email-field" type="email" name="author-email" placeholder="Ваша почта для ответа?">
+          </p>
+          <p class="application-form-input-string">
+            <label class="visually-hidden" for="author-message-field">Текст сообщения</label>
+            <textarea class="application-form-textarea form-input" id="author-message-field" name="author-message" placeholder="Напишите что-нибудь..." required></textarea>
+          </p>
+          <p class="application-form-textarea-string">
+            <button class="application-form-submit button" type="submit">Отправить</button>
+          </p>
+          <button type="button" class="modal-close">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </form>
+      </section>
+    </div>
 
   </body>
 </html>

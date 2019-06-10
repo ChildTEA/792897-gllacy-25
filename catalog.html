@@ -81,42 +81,42 @@
           </li>
           <li class="user-navigation-item dropdown-wrapper">
             <a class="user-navigation-link user-cart user-cart-filled" aria-label="Корзина" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
+              <svg class="user-navigation-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20"><path class="basket" fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><g fill="#343434"><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></g></svg>
               <span>2 товара</span>
             </a>
             <div class="user-cart-dropdown popup dropdown">
               <table class="cart-contains">
-                <tr>
-                  <td>
+                <tr class="cart-contains-item">
+                  <td class="cart-contains-cell catr-contains-delete">
                     <button class="delete"><span class="visually-hidden">Удалить</span></button>
                   </td>
-                  <td class="cart-contains-image">
+                  <td class="cart-contains-cell cart-contains-image">
                     <img src="img/cart-thumbnail-1.jpg" width="33" height="33" alt="Миниатюра товара">
                   </td>
-                  <td class="cart-contains-title">
+                  <td class="cart-contains-cell cart-contains-title">
                     Пломбир с апельсиновым джемом
                   </td>
-                  <td class="cart-contains-amount">
+                  <td class="cart-contains-cell cart-contains-amount">
                     1,5 кг x <span>200 руб.</span>
                   </td>
-                  <td class="cart-contains-cost">
+                  <td class="cart-contains-cell cart-contains-cost">
                     300 руб.
                   </td>
                 </tr>
-                <tr>
-                  <td>
+                <tr class="cart-contains-item">
+                  <td class="cart-contains-cell catr-contains-delete">
                     <button class="delete"><span class="visually-hidden">Удалить</span></button>
                   </td>
-                  <td class="cart-contains-image">
+                  <td class="cart-contains-cell cart-contains-image">
                     <img src="img/cart-thumbnail-2.jpg" width="33" height="33" alt="Миниатюра товара">
                   </td>
-                  <td class="cart-contains-title">
+                  <td class="cart-contains-cell cart-contains-title">
                     Клубничный пломбир с присыпкой из белого шоколада
                   </td>
-                  <td class="cart-contains-amount">
+                  <td class="cart-contains-cell cart-contains-amount">
                     1,5 кг x <span>300 руб.</span>
                   </td>
-                  <td class="cart-contains-cost">
+                  <td class="cart-contains-cell cart-contains-cost">
                     450 руб.
                   </td>
                 </tr>
@@ -124,7 +124,7 @@
               <p class="cart-contains-total">
                 Итого: 750 руб.
               </p>
-              <a class="button" href="#">Оформить заказ</a>
+              <a class="user-cart-submit button" href="#">Оформить заказ</a>
             </div>
           </li>
         </ul>
@@ -137,9 +137,9 @@
     
     <main>
       <ul class="breadcrumbs modified-list container">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li class="breadcrumbs-current" aria-current="page">Сливочное</li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Каталог</a></li>
+        <li class="breadcrumbs-item breadcrumbs-current" aria-current="page">Сливочное</li>
       </ul>
 
       <h1 class="page-title container">Сливочное мороженое</h1>
@@ -149,67 +149,75 @@
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="filter-group group-sorting">
             <legend>Сортировка:</legend>
-            <select class="filter-group-select" name="catalog-sorting">
-              <option value="sorting-popular" selected>по популярности</option>
-              <option value="sorting-cheap">сначала недорогие</option>
-              <option value="sorting-expansive">сначала дорогие</option>
-              <option value="sorting-fat">по жирности</option>
-            </select>
+            <div class="filter-group-select-wrapper">
+              <select class="filter-group-select filter-group-panel" name="catalog-sorting">
+                <option value="sorting-popular" selected>по популярности</option>
+                <option value="sorting-cheap">сначала недорогие</option>
+                <option value="sorting-expansive">сначала дорогие</option>
+                <option value="sorting-fat">по жирности</option>
+              </select>
+            </div>
           </fieldset>
           <fieldset class="filter-group group-cost-range">
             <legend>Цена: </legend>
-            <label for="filter-cost-min" class="visually-hidden">от</label>
-            <input class="filter-cost-input" id="filter-cost-min" type="number" name="cost-range-min" min="0" step="1" value="100">
-            руб. –
-            <label for="filter-cost-max" class="visually-hidden">до</label>
-            <input class="filter-cost-input" id="filter-cost-max" type="number" name="cost-range-max" min="0" step="1" value="500">
-            руб.
-            <div class="filter-range">
-              <!-- Здесь будет фильтр с ползунками -->
+            <div class="group-cost-range-application">
+              <label for="filter-cost-min" class="visually-hidden">от</label>
+              <input class="filter-cost-input" id="filter-cost-min" type="number" name="cost-range-min" min="0" step="1" value="100">
+              руб. –
+              <label for="filter-cost-max" class="visually-hidden">до</label>
+              <input class="filter-cost-input" id="filter-cost-max" type="number" name="cost-range-max" min="0" step="1" value="500">
+              руб.
+            </div>
+            <div class="filter-range filter-group-panel">
+              <div class="filter-range-scale">
+                <div class="filter-range-bar"></div>
+              </div>
+              <div class="filter-range-toggle filter-range-min-toggle"></div>
+              <div class="filter-range-toggle filter-range-max-toggle"></div>
             </div>
           </fieldset>
           <fieldset class="filter-group group-fat">
             <legend>Жирность:</legend>
-            <ul class="filter-group-radio-list modified-list">
+            <ul class="filter-group-radio-list modified-list filter-group-panel">
               <li class="filter-group-radio-item">
-                <input id="fat-range-0" type="radio" name="fat-range" value="0">
+                <input class="filter-group-radio-input visually-hidden" id="fat-range-0" type="radio" name="fat-range" value="0">
                 <label for="fat-range-0">0%</label>
               </li>
               <li class="filter-group-radio-item">
-                <input id="fat-range-less10" type="radio" name="fat-range" checked>
+                <input class="filter-group-radio-input visually-hidden" id="fat-range-less10" type="radio" name="fat-range" checked>
                 <label for="fat-range-less10">до 10%</label>
               </li>
               <li class="filter-group-radio-item">
-                <input id="fat-range-less30" type="radio" name="fat-range">
+                <input class="filter-group-radio-input visually-hidden" id="fat-range-less30" type="radio" name="fat-range">
                 <label for="fat-range-less30">до 30%</label>
               </li>
               <li class="filter-group-radio-item">
-                <input id="fat-range-more30" type="radio" name="fat-range">
+                <input class="filter-group-radio-input visually-hidden" id="fat-range-more30" type="radio" name="fat-range">
                 <label for="fat-range-more30">выше 30%</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-group group-fill">
             <legend>Наполнители:</legend>
-            <ul class="filter-group-checkbox-list modified-list">
+            <ul class="filter-group-checkbox-list modified-list filter-group-panel">
               <li class="filter-group-checkbox-item">
-                <input id="fill-chocolate" type="checkbox" name="fill-chocolate" checked>
+                <input class="filter-group-checkbox-input visually-hidden" id="fill-chocolate" type="checkbox" name="fill-chocolate" checked>
                 <label for="fill-chocolate">шоколадные</label>
               </li>
               <li class="filter-group-checkbox-item">
-                <input id="fill-sugar-powder" type="checkbox" name="fill-sugar-powder" checked>
+                <input class="filter-group-checkbox-input visually-hidden" id="fill-sugar-powder" type="checkbox" name="fill-sugar-powder" checked>
                 <label for="fill-sugar-powder">сахарные присыпки</label>
               </li>
               <li class="filter-group-checkbox-item">
-                <input id="fill-fruit" type="checkbox" name="fill-fruit">
+                <input class="filter-group-checkbox-input visually-hidden" id="fill-fruit" type="checkbox" name="fill-fruit">
                 <label for="fill-fruit">фрукты</label>
               </li>
               <li class="filter-group-checkbox-item">
-                <input id="fill-sirup" type="checkbox" name="fill-sirup">
+                <input class="filter-group-checkbox-input visually-hidden" id="fill-sirup" type="checkbox" name="fill-sirup">
                 <label for="fill-sirup">сиропы</label>
               </li>
               <li class="filter-group-checkbox-item">
-                <input id="fill-jam" type="checkbox" name="fill-jam">
+                <input class="filter-group-checkbox-input visually-hidden" id="fill-jam" type="checkbox" name="fill-jam">
                 <label for="fill-jam">джемы</label>
               </li>
             </ul>
@@ -222,6 +230,7 @@
         <h2 class="visually-hidden">Каталог продукции</h2>
         <ul class="catalog-list modified-list">
           <li class="catalog-item">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/catalog-1.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -230,6 +239,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/catalog-2.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -238,6 +248,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/catalog-3.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -246,6 +257,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/catalog-4.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -254,6 +266,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/catalog-5.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -262,6 +275,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/catalog-6.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -270,6 +284,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/catalog-7.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -278,6 +293,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/catalog-8.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -286,6 +302,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/catalog-9.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -294,6 +311,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/catalog-10.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -302,6 +320,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/catalog-11.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -310,6 +329,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/catalog-12.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -321,25 +341,25 @@
 
         <ul class="pagination-list modified-list">
           <li class="pagination-item pagination-previous">
-            <a class="disabled"><span class="visually-hidden">Назад</span></a>
-          </li>
-          <li class="pagination-item pagination-item-current">
-            <a>1</a>
+            <a class="pagination-arrow pagination-arrow-prev disabled"><span class="visually-hidden">Назад</span></a>
           </li>
           <li class="pagination-item">
-            <a href="#">2</a>
+            <a class="pagination-link pagination-link-current">1</a>
           </li>
           <li class="pagination-item">
-            <a href="#">3</a>
+            <a class="pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a href="#">4</a>
+            <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a href="#">5</a>
+            <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item pagination-next">
-            <a href="#"><span class="visually-hidden">Вперёд</span></a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">5</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-arrow pagination-arrow-next" href="#"><span class="visually-hidden">Вперёд</span></a>
           </li>
         </ul>
       </section>
@@ -394,7 +414,7 @@
 
       <p class="footer-copyrights">
         <a class="developer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy-small.svg" width="114" height="39" alt="Логотип компании HTML Academy">
+          <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип компании HTML Academy">
         </a>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
       </p>
