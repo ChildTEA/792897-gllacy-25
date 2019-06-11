@@ -103,6 +103,8 @@ img {
 
   background-color: #ffffff;
   box-shadow: none;
+
+  cursor: pointer;
 }
 
 .button-light:active {
@@ -625,6 +627,8 @@ a.lead {
 }
 
 .catalog-item h3 {
+  position: relative;
+
   margin: 0;
   margin-top: 8px;
   padding: 0 5px;
@@ -669,7 +673,7 @@ a.lead {
   right: 34px;
 
   display: none;
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
 }
 
 .catalog-item-image {
@@ -693,6 +697,7 @@ a.lead {
 .catalog-item:hover {
   z-index: 1;
 }
+
 
 .catalog-item .catalog-item-bg {
   position: absolute;
@@ -915,6 +920,8 @@ background-image: url("../img/features-icecream.svg");
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+
+  cursor: pointer;
 }
 
 .filter-group [disabled],
@@ -945,8 +952,6 @@ background-image: url("../img/features-icecream.svg");
 }
 
 .filter-group-select {
-  position: relative;
-
   width: 194px;
   padding-right: 14px;
 
