@@ -1315,7 +1315,7 @@ background-image: url("../img/features-icecream.svg");
 
 .social-button:hover,
 .social-button:focus {
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
   border-color: rgba(255, 255, 255, 0.5);
 }
 
