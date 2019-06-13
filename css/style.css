@@ -3,8 +3,8 @@ html {
 }
 
 *, *::before, *::after {
-    box-sizing: inherit;
-  }
+  box-sizing: inherit;
+}
 
 body {
   min-width: 1200px;
@@ -305,7 +305,6 @@ a.lead {
 .catalog-sub-menu a:active {
   background-color: #f6b5a5;
 }
-
 
 .sub-menu-special {
   position: relative;
@@ -685,7 +684,6 @@ a.lead {
   z-index: 1;
 }
 
-
 .catalog-item .catalog-item-bg {
   position: absolute;
   top: -6px;
@@ -707,7 +705,6 @@ a.lead {
 .catalog-item:hover .button {
   display: block;
 }
-
 
 .features {
   padding: 25px 21px 15px 20px;
@@ -741,7 +738,7 @@ a.lead {
 }
 
 .features-item-ice-cream {
-background-image: url("../img/features-icecream.svg");
+  background-image: url("../img/features-icecream.svg");
 }
 
 .features-item-cow {
@@ -1266,7 +1263,6 @@ background-image: url("../img/features-icecream.svg");
   margin-right: 0px;
 }
 
-
 .pagination-item .disabled,
 .pagination-item .disabled:hover,
 .pagination-item .disabled:focus,
@@ -1341,7 +1337,6 @@ background-image: url("../img/features-icecream.svg");
 .footer-references:last-child {
   margin-right: 0;
 }
-
 
 .footer-references-link {
   font-size: 13px;
