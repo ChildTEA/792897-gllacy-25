@@ -380,6 +380,8 @@ a.lead {
 
   top: 6px;
   left: 16px;
+
+  fill: currentColor;
 }
 
 .user-navigation-link.search-link {
@@ -1320,6 +1322,10 @@ background-image: url("../img/features-icecream.svg");
 .social-button:active {
   color: rgba(255, 255, 255, 0.9);
   border-color: rgba(255, 255, 255, 0.7);
+}
+
+.social-button svg {
+  fill: currentColor;
 }
 
 .footre-references-wraper {
