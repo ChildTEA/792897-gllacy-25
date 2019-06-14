@@ -189,6 +189,10 @@ a.lead {
   margin: 0 auto;
 }
 
+.align-right-wrapper {
+  text-align: right;
+}
+
 .layout-columns {
   display: flex;
   justify-content: space-between;
@@ -587,6 +591,94 @@ a.lead {
 
   border: none;
 }
+
+/* promo-slider */
+
+.promo-slider {
+  position: relative;
+
+  margin-top: -38px;
+}
+
+.promo-slider-item {
+  position: relative;
+
+  height: 584px;
+
+  text-align: center;
+}
+
+.promo-slider-image {
+  position: relative;
+  z-index: -1;
+
+  display: block;
+  margin: 0 auto;
+
+  background-position: center;
+  background-size: contain;
+}
+
+.promo-slider-caption {
+  position: absolute;
+  bottom: 95px;
+
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60.35px;
+}
+
+.promo-slider-button {
+  position: absolute;
+  bottom: 61px;
+  left: 50%;
+  
+  padding: 9px 41px 11px;
+  
+  font-size: 32px;
+  line-height: 44px;
+  
+  border-radius: 50px;
+
+  transform: translateX(-50%);
+}
+
+.promo-slider-navigation {
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+
+  display: flex;
+}
+
+.promo-slider-navigation-item {
+  margin-right: 8px;
+}
+
+.promo-slider-dot {
+  width: 21px;
+  height: 21px;
+
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.promo-slider-dot:hover {
+  background-color: rgba(248, 247, 244, 0.4);
+}
+
+.promo-slider-dot:active,
+.promo-slider-dot-active {
+  background-color: #ffffff;
+}
+
+/*  */
+
 
 .main-promo .catalog-list {
   margin-bottom: 0;

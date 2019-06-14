@@ -103,25 +103,55 @@
       <section class="main-promo">
         <h2 class="visually-hidden container">Акции магазина</h2>
         
-        <!-- Здесь будет промо-слайдер -->
         <section class="promo-slider container">
-
+          <ul class="promo-slider-list modified-list">
+            <li class="promo-slider-item">
+              <img class="promo-slider-image promo-slider-image-image-1" src="img/promo-icecream-1.png" alt="" width="647" height="584">
+              <h3 class="promo-slider-caption">Крем-брюле и пломбир <br>с малиновым джемом</h3>
+              <a class="promo-slider-button button" href="#">Давайте оба!</a>
+            </li>
+            <li class="promo-slider-item">
+              <img class="promo-slider-image promo-slider-image-image-2" src="img/promo-icecream-2.png" alt="" width="644" height="582">
+              <h3 class="promo-slider-caption">Шоколадный пломбир <br>и лимонный сорбет </h3>
+              <a class="promo-slider-button button" href="#">Давайте оба!</a>
+            </li>
+            <li class="promo-slider-item">
+              <img class="promo-slider-image promo-slider-image-image-3" src="img/promo-icecream-3.png" alt="" width="639" height="582">
+              <h3 class="promo-slider-caption">Пломбир с помадкой <br>и клубничный щербет</h3>
+              <a class="promo-slider-button button" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+          <ul class="promo-slider-navigation modified-list">
+            <li class="promo-slider-navigation-item">
+              <button class="promo-slider-dot" aria-label="Первый слайд" onclick="currentSlide(1)"></button>
+            </li>
+            <li class="promo-slider-navigation-item">
+              <button class="promo-slider-dot" aria-label="Второй слайд" onclick="currentSlide(2)"></button>
+            </li>
+            <li class="promo-slider-navigation-item">
+              <button class="promo-slider-dot" aria-label="Третий слайд" onclick="currentSlide(3)"></button>
+            </li>
+          </ul>
         </section>
 
         <!-- <ul class="promo-cards modified-list layout-columns container">
-          <li class="promo-card-raspberries layout-column">
-            <b>Малинка даром!</b>
+          <li class="promo-cards-item promo-card-raspberries layout-column">
+            <p class="promo-card-lead">Малинка даром!</p>
             <p class="promo-card-text">
             При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
             </p>
-            <a class="button" href="#">Хочу варенье!</a>
+            <div class="align-right-wrapper">
+              <a class="promo-card-batton button" href="#">Хочу варенье!</a>
+            </div>
           </li>
-          <li class="promo-card-chocolate layout-column">
-            <b>Шоколадки даром!</b>
+          <li class="promo-cards-item promo-card-chocolate layout-column">
+            <p class="promo-card-lead">Шоколадки даром!</p>
             <p class="promo-card-text">
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
-          <a href="#" class="button">Хочу шоколадки!</a>
+          <div class="align-right-wrapper">
+            <a class="promo-card-batton button" href="#" >Хочу шоколадки!</a>
+          </div>
           </li>
         </ul> -->
 
@@ -315,5 +345,7 @@
       </section>
     </div>
 
+
+    <script src="js/promo-slider.js"></script>
   </body>
 </html>
