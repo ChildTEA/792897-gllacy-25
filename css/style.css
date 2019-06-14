@@ -679,6 +679,50 @@ a.lead {
 
 /*  */
 
+/* promo-cards */
+
+.promo-cards {
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.promo-cards-item {
+  padding: 16px 21px 23px 19px;
+
+  border-radius: 13px;
+}
+
+.promo-card-chocolate {
+  background-image: url("../img/promo-bg-chocolate.jpg");
+}
+
+.promo-card-raspberries {
+  background-image: url("../img/promo-bg-raspberries.jpg");
+}
+
+.promo-card-lead {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.promo-card-text {
+  margin: 0;
+  margin-bottom: 44px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.promo-card-batton {
+  padding: 10px 22px 12px;
+}
+
+/*  */
 
 .main-promo .catalog-list {
   margin-bottom: 0;
