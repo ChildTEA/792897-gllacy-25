@@ -62,6 +62,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #fefefe;
+  text-align: center;
 
   background-image: linear-gradient(#f26843, #e74a35);
   border: none;
@@ -951,15 +952,66 @@ a.lead {
 }
 
 .subscribe-submit {
-  padding: 9px 19px;
+  padding: 9px 19px 11PX;
+}
 
-  vertical-align: top;
+.contacts-map-container {
+  position: relative;
+  display: table;
+  margin: 0 auto;
 }
 
 .contacts-map {
   width: 1200px;
   height: 430px;
-  margin: 0 auto;
+  margin: 0;
+}
+
+.office-address {
+  position: absolute;
+  top: 62px;
+  right: 27px;
+
+  width: 302px;
+  padding: 29px 25px 31px;
+
+  color: #323232;
+  text-align: center;
+
+  background-color: #fdfefe;
+
+  border-radius: 15px;
+}
+
+.office-address-text {
+  margin: 0;
+  margin-bottom: 18px;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.office-address-text:last-of-type {
+  margin-bottom: 25px;
+}
+
+.office-address .info-phone {
+  line-height: 28px;
+}
+
+.office-address-info {
+  display: inline-block;  /* is necessary? */
+  margin-top: 1px;        /* is necessary? */
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.office-addres-button {
+  width: 100%;
+  padding: 9px 25px 11px;
 }
 
 /* -- -- -- -- -- Inner page -- -- -- -- -- */
