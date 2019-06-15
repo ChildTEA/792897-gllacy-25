@@ -103,36 +103,36 @@
       <section class="main-promo">
         <h2 class="visually-hidden container">Акции магазина</h2>
         
-        <section class="promo-slider container">
+        <div class="promo-slider container">
           <ul class="promo-slider-list modified-list">
             <li class="promo-slider-item">
-              <img class="promo-slider-image promo-slider-image-image-1" src="img/promo-icecream-1.png" alt="" width="647" height="584">
-              <h3 class="promo-slider-caption">Крем-брюле и пломбир <br>с малиновым джемом</h3>
+              <img class="promo-slider-image" src="img/promo-icecream-1.png" alt="" width="647" height="584">
+              <h3 class="promo-slider-caption">Крем-брюле и пломбир с&nbsp;малиновым джемом</h3>
               <a class="promo-slider-button button" href="#">Давайте оба!</a>
             </li>
-            <li class="promo-slider-item">
-              <img class="promo-slider-image promo-slider-image-image-2" src="img/promo-icecream-2.png" alt="" width="644" height="582">
-              <h3 class="promo-slider-caption">Шоколадный пломбир <br>и лимонный сорбет </h3>
+            <li class="promo-slider-item" hidden>
+              <img class="promo-slider-image" src="img/promo-icecream-2.png" alt="" width="644" height="582">
+              <h3 class="promo-slider-caption">Шоколадный пломбир и &nbsp;лимонный сорбет </h3>
               <a class="promo-slider-button button" href="#">Давайте оба!</a>
             </li>
-            <li class="promo-slider-item">
-              <img class="promo-slider-image promo-slider-image-image-3" src="img/promo-icecream-3.png" alt="" width="639" height="582">
-              <h3 class="promo-slider-caption">Пломбир с помадкой <br>и клубничный щербет</h3>
+            <li class="promo-slider-item" hidden>
+              <img class="promo-slider-image" src="img/promo-icecream-3.png" alt="" width="639" height="582">
+              <h3 class="promo-slider-caption">Пломбир с помадкой и&nbsp;клубничный щербет</h3>
               <a class="promo-slider-button button" href="#">Давайте оба!</a>
             </li>
           </ul>
           <ul class="promo-slider-navigation modified-list">
             <li class="promo-slider-navigation-item">
-              <button class="promo-slider-dot" aria-label="Первый слайд" onclick="currentSlide(1)"></button>
+              <button class="promo-slider-dot" aria-label="Первый слайд" onclick="currentSlide(0)"></button>
             </li>
             <li class="promo-slider-navigation-item">
-              <button class="promo-slider-dot" aria-label="Второй слайд" onclick="currentSlide(2)"></button>
+              <button class="promo-slider-dot" aria-label="Второй слайд" onclick="currentSlide(1)"></button>
             </li>
             <li class="promo-slider-navigation-item">
-              <button class="promo-slider-dot" aria-label="Третий слайд" onclick="currentSlide(3)"></button>
+              <button class="promo-slider-dot" aria-label="Третий слайд" onclick="currentSlide(2)"></button>
             </li>
           </ul>
-        </section>
+        </div>
 
         <ul class="promo-cards modified-list layout-columns container">
           <li class="promo-cards-item promo-card-raspberries layout-column">
@@ -157,7 +157,6 @@
 
         <ul class="catalog-list modified-list container">
           <li class="catalog-item catalog-item-hit">
-            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/promo-hits-1.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -166,7 +165,6 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item catalog-item-hit">
-            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/promo-hits-2.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -175,7 +173,6 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item catalog-item-hit">
-            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/promo-hits-3.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -184,7 +181,6 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item catalog-item-hit">
-            <div class="catalog-item-bg"></div>
             <p class="catalog-item-image">
               <img src="img/promo-hits-4.png" width="267" height="267" alt="Фото вкусного мороженого">
             </p>
@@ -313,18 +309,18 @@
       </p>
     </footer>
     
-    <div class="modal-overlay">
-      <section class="modal modal-write-us popup container">
+    <div class="popup-overlay write-us-overlay">
+      <section class="popup-write-us popup container">
         <h2 class="visually-hidden">Напишите нам</h2>
         <p class="lead">Мы обязательно вам ответим!</p>
         <form class="application-form" action="https://echo.htmlacademy.ru" method="POST">
           <p class="application-form-input-string">
             <label class="visually-hidden" for="author-name-field">Имя</label>
-            <input class="application-form-input form-input" id="author-name-field" type="text" name="author-name" placeholder="Как вас зовут?">
+            <input class="application-form-input form-input" id="author-name-field" type="text" name="author-name" placeholder="Как вас зовут?" required>
           </p>
           <p class="application-form-input-string">
             <label class="visually-hidden" for="author-email-field">Электронная почта</label>
-            <input class="application-form-input form-input" id="author-email-field" type="email" name="author-email" placeholder="Ваша почта для ответа?">
+            <input class="application-form-input form-input" id="author-email-field" type="email" name="author-email" placeholder="Ваша почта для ответа?" required>
           </p>
           <p class="application-form-input-string">
             <label class="visually-hidden" for="author-message-field">Текст сообщения</label>
@@ -333,7 +329,7 @@
           <p class="application-form-textarea-string">
             <button class="application-form-submit button" type="submit">Отправить</button>
           </p>
-          <button type="button" class="modal-close">
+          <button type="button" class="popup-close">
             <span class="visually-hidden">Закрыть</span>
           </button>
         </form>
@@ -341,6 +337,6 @@
     </div>
 
 
-    <script src="js/promo-slider.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
