@@ -1,43 +1,34 @@
-// Проверить, есть ли кнопки в тех местах, где должны быть ссылки
-// Переделать слайдер так, чтобы лишние слайды не показывались по умолчанию
-// Поудалять атрибуты hidden у слайдов
+/* Оживление слайдера */
 
+var slides = document.querySelectorAll('.promo-slider-item');
+var dots = document.querySelectorAll('.promo-slider-dot');
+var themeClassName = 'promo-theme-';
 
-// Вопрос: В лекции рассказывалось о валидации форм при помощи JS. HTML5 required уже по умоланию проверяет валидность форм. Нужно ли подстраховываться JavaScript'ом?
+var addDotClickHandler = function(sliderControl, sliderItem, themeName) {
+  sliderControl.addEventListener('click', function(evt) {
+    evt.preventDefault;
+    console.log()
+    for (var i = 0; i < dots.length; i++) {
+      dots[i].classList.remove('promo-slider-dot-active');
+      slides[i].classList.remove('promo-slider-item-current');
+      document.body.classList.remove('promo-theme-1');
+      document.body.classList.remove('promo-theme-2');
+      document.body.classList.remove('promo-theme-3');
+    }
 
+    sliderControl.classList.add('promo-slider-dot-active');
+    sliderItem.classList.add('promo-slider-item-current');
+    console.log(i);
+    document.body.classList.add(themeName);
+  });
+}
 
-// Slider
+for (var i = 0; i < dots.length; i++) {
+  addDotClickHandler(dots[i], slides[i], themeClassName + (i + 1));
+}
+  
 
-// var slideIndex = 0;
-// var slides = document.querySelectorAll('.promo-slider-item');
-// var dots = document.querySelectorAll('.promo-slider-dot');
-// var bodyClassName = 'promo-theme-';
-
-// var showSlides = function (n) {
-//   for (var i = 0; i < slides.length; i++) {
-//     slides[i].style.display = 'none'; 
-//   }
-//   for (var i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(' promo-slider-dot-active', '');
-//   }
-//   slides[slideIndex].style.display = 'block'; 
-//   dots[slideIndex].className += ' promo-slider-dot-active';
-//   document.body.className = bodyClassName + (slideIndex + 1);
-// };
-
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// showSlides(slideIndex);
-
-
-
-
-// ModalWriteUs
-// Всё окно с оверлеем
-// Только попап
-
+/* Модальное окно: появление */
 
 var linkWriteUs = document.querySelector('.office-addres-button');
 var modalOverlay = document.querySelector('.modal-overlay')
@@ -85,7 +76,7 @@ linkWriteUs.addEventListener('click', function (evt) {
 });
 
 
-// Modal close
+/* Модальное окно: закрытие */
 
 popupCloseWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -111,7 +102,7 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
-// Невалидная форма
+/* Невалидная форма */
 
 applicationForm.addEventListener('submit', function(evt) {
   if (!inputName.value || !inputEmail.value || inputMessage.value) {

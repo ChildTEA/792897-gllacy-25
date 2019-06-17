@@ -653,9 +653,14 @@ a.lead {
 .promo-slider-item {
   position: relative;
 
+  display: none;
   height: 500px;
 
   text-align: center;
+}
+
+.promo-slider-item-current {
+  display: block;
 }
 
 .promo-slider-image {
