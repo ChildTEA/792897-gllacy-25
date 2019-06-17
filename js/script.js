@@ -35,11 +35,14 @@
 
 
 // ModalWriteUs
+// Всё окно с оверлеем
+// Только попап
+
 
 var linkWriteUs = document.querySelector('.office-addres-button');
-var modalWriteUs = document.querySelector('.write-us-overlay');
+var modalOverlay = document.querySelector('.modal-overlay')
 var popupWriteUs = document.querySelector('.popup-write-us');
-var popupCloseWriteUs = document.querySelector('.write-us-overlay .popup-close');
+var popupCloseWriteUs = document.querySelector('.popup-write-us .popup-close');
 
 var applicationForm = document.querySelector('.application-form');
 var inputName = applicationForm.querySelector('[name="author-name"]');
@@ -59,34 +62,62 @@ try {
 
 linkWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
-  console.log('button pressed!');
+  modalOverlay.classList.add('modal-show');
   popupWriteUs.classList.add('modal-show');
 
   if (isLocalStorage) {
-
+    userName = localStorage.getItem('userName');
+    userEmail = localStorage.getItem('userEmeil');
+    if (userName) {
+      inputName.value = userName;
+      if (userEmail) {
+        inputEmail.value = userEmail;
+        inputMessage.focus();
+      } else {
+        inputEmail.focus();
+      }
+    } else {
+      inputName.focus();
+    }
   } else {
     inputName.focus();
   }
 });
 
-popupCloseWriteUs.addEventListener('click', function(evt) {
+
+// Modal close
+
+popupCloseWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
+  modalOverlay.classList.remove('modal-show');
   popupWriteUs.classList.remove('modal-show');
+  popupWriteUs.classList.remove('popup-error');
 });
 
-// applicationForm.addEventListener('submit', function(evt) {
-//   evt.preventDefault();  // не срабатывает
-//   console.log("button pressed!!!");
-// });
+modalOverlay.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  modalOverlay.classList.remove('modal-show');
+  popupWriteUs.classList.remove('modal-show');
+  popupWriteUs.classList.remove('popup-error');
+});
 
-applicationForm.addEventListener("submit", function (evt) {
-  if (!inputName.value || !inputEmail.value || !inputMessage.value) {
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27 && popupWriteUs.classList.contains('modal-show')) {
     evt.preventDefault();
-    // popup.classList.add("modal-error");
+    modalOverlay.classList.remove('modal-show');
+    popupWriteUs.classList.remove('modal-show');
+    popupWriteUs.classList.remove('popup-error');
   }
-  // } else {
-  //   if (isStorageSupport) {
-  //     localStorage.setItem("login", login.value);
-  //   }
-  // }
+});
+
+
+// Невалидная форма
+
+applicationForm.addEventListener('submit', function(evt) {
+  if (!inputName.value || !inputEmail.value || inputMessage.value) {
+    evt.preventDefault();
+    popupWriteUs.classList.remove('popup-error');
+    popupWriteUs.offsetWidth = popupWriteUs.offsetWidth;
+    popupWriteUs.classList.add('popup-error');
+  }
 });
