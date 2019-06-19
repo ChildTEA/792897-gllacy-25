@@ -31,10 +31,9 @@ for (var i = 0; i < dots.length; i++) {
 /* Модальное окно: появление */
 
 var linkWriteUs = document.querySelector('.office-addres-button');
-var modalOverlay = document.querySelector('.modal-overlay')
-var popupWriteUs = document.querySelector('.popup-write-us');
-var popupCloseWriteUs = document.querySelector('.popup-write-us .popup-close');
-
+var modalWriteUs = document.querySelector('.modal-write-us');
+var modalWriteUsForm = document.querySelector('.application-form');
+var popupCloseWriteUs = document.querySelector('.modal-write-us .popup-close');
 var applicationForm = document.querySelector('.application-form');
 var inputName = applicationForm.querySelector('[name="author-name"]');
 var inputEmail = applicationForm.querySelector('[name="author-email"]');
@@ -53,8 +52,7 @@ try {
 
 linkWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
-  modalOverlay.classList.add('modal-show');
-  popupWriteUs.classList.add('modal-show');
+  modalWriteUs.classList.add('modal-show');
 
   if (isLocalStorage) {
     userName = localStorage.getItem('userName');
@@ -80,24 +78,15 @@ linkWriteUs.addEventListener('click', function (evt) {
 
 popupCloseWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
-  modalOverlay.classList.remove('modal-show');
-  popupWriteUs.classList.remove('modal-show');
-  popupWriteUs.classList.remove('popup-error');
-});
-
-modalOverlay.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  modalOverlay.classList.remove('modal-show');
-  popupWriteUs.classList.remove('modal-show');
-  popupWriteUs.classList.remove('popup-error');
+  modalWriteUs.classList.remove('modal-show');
+  modalWriteUsForm.classList.remove('popup-error');
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27 && popupWriteUs.classList.contains('modal-show')) {
+  if (evt.keyCode === 27 && modalWriteUs.classList.contains('modal-show')) {
     evt.preventDefault();
-    modalOverlay.classList.remove('modal-show');
-    popupWriteUs.classList.remove('modal-show');
-    popupWriteUs.classList.remove('popup-error');
+    modalWriteUs.classList.remove('modal-show');
+    modalWriteUsForm.classList.remove('popup-error');
   }
 });
 
@@ -107,8 +96,8 @@ window.addEventListener("keydown", function (evt) {
 applicationForm.addEventListener('submit', function(evt) {
   if (!inputName.value || !inputEmail.value || !inputMessage.value) {
     evt.preventDefault();
-    popupWriteUs.classList.remove('popup-error');
-    popupWriteUs.offsetWidth = popupWriteUs.offsetWidth;
-    popupWriteUs.classList.add('popup-error');
+    modalWriteUsForm.classList.remove('popup-error');
+    modalWriteUsForm.offsetWidth = modalWriteUsForm.offsetWidth;
+    modalWriteUsForm.classList.add('popup-error');
   }
 });
