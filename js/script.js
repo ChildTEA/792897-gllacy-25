@@ -105,7 +105,7 @@ window.addEventListener("keydown", function (evt) {
 /* Невалидная форма */
 
 applicationForm.addEventListener('submit', function(evt) {
-  if (!inputName.value || !inputEmail.value || inputMessage.value) {
+  if (!inputName.value || !inputEmail.value || !inputMessage.value) {
     evt.preventDefault();
     popupWriteUs.classList.remove('popup-error');
     popupWriteUs.offsetWidth = popupWriteUs.offsetWidth;
