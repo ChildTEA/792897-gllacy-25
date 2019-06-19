@@ -4,29 +4,26 @@ var slides = document.querySelectorAll('.promo-slider-item');
 var dots = document.querySelectorAll('.promo-slider-dot');
 var themeClassName = 'promo-theme-';
 
-var addDotClickHandler = function(sliderControl, sliderItem, themeName) {
-  sliderControl.addEventListener('click', function(evt) {
-    evt.preventDefault;
-    console.log()
+var addDotClickHandler = function(currentIndex) {
+  dots[currentIndex].addEventListener('click', function(evt) {
+    evt.preventDefault();
+
     for (var i = 0; i < dots.length; i++) {
-      dots[i].classList.remove('promo-slider-dot-active');
+      dots[i].removeAttribute('disabled');
       slides[i].classList.remove('promo-slider-item-current');
-      document.body.classList.remove('promo-theme-1');
-      document.body.classList.remove('promo-theme-2');
-      document.body.classList.remove('promo-theme-3');
+      document.body.classList.remove(themeClassName + (i + 1));
     }
 
-    sliderControl.classList.add('promo-slider-dot-active');
-    sliderItem.classList.add('promo-slider-item-current');
-    console.log(i);
-    document.body.classList.add(themeName);
+    dots[currentIndex].setAttribute('disabled', 'disabled');
+    slides[currentIndex].classList.add('promo-slider-item-current');
+    document.body.classList.add(themeClassName + (currentIndex + 1));
   });
 }
 
 for (var i = 0; i < dots.length; i++) {
-  addDotClickHandler(dots[i], slides[i], themeClassName + (i + 1));
+  addDotClickHandler(i);
 }
-  
+
 
 /* Модальное окно: появление */
 
@@ -45,7 +42,7 @@ var userName = '';
 var userEmail = '';
 
 try {
-  localStorage.getItem("userName");
+  localStorage.getItem('userName');
 } catch (err) {
   isLocalStorage = false;
 }
@@ -56,7 +53,7 @@ linkWriteUs.addEventListener('click', function (evt) {
 
   if (isLocalStorage) {
     userName = localStorage.getItem('userName');
-    userEmail = localStorage.getItem('userEmeil');
+    userEmail = localStorage.getItem('userEmail');
     if (userName) {
       inputName.value = userName;
       if (userEmail) {

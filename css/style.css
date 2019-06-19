@@ -746,8 +746,10 @@ a.lead {
 }
 
 .promo-slider-dot:active,
-.promo-slider-dot-active {
+.promo-slider-dot:disabled {
   background-color: #ffffff;
+
+  cursor: auto;
 }
 
 .promo-cards {
