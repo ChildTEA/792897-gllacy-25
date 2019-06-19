@@ -750,11 +750,13 @@ a.lead {
 }
 
 .promo-card-chocolate {
+  background-color: #8d2742;
   background-image: url("../img/promo-bg-chocolate.jpg");
   background-position: -218px -104px;
 }
 
 .promo-card-raspberries {
+  background-color: #8d2742;
   background-image: url("../img/promo-bg-raspberries.jpg");
   background-position: -50px -94px;
 }
@@ -1036,6 +1038,8 @@ a.lead {
   width: 1200px;
   height: 430px;
   margin: 0;
+
+  background-color: #f7f1d9;
 }
 
 .office-address {
