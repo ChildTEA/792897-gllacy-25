@@ -1400,7 +1400,9 @@ a.lead {
 }
 
 .filter-cost-input {
-  width: 23px;
+  margin-right: -2px;
+
+  width: 25px;
 }
 
 .filter-cost-input::-webkit-outer-spin-button,
