@@ -1663,7 +1663,7 @@ a.lead {
 
 .popup-write-us {
   position: fixed;
-  top: 337px;
+  top: 61.4%;
   left: 1px;
   
   display: none;
@@ -1672,6 +1672,8 @@ a.lead {
   padding: 16px 24px 27px 24px;
 
   border-radius: 10px;
+
+  transform: translateY(-50%);
 }
 
 .popup-write-us h2 {
@@ -1698,8 +1700,7 @@ a.lead {
 
 .application-form-textarea-string {
   margin: 0;
-
-  text-align: right;
+  margin-bottom: 18px;
 }
 
 .application-form-textarea {
@@ -1712,9 +1713,16 @@ a.lead {
   resize: none;
 }
 
+.application-form-button-string {
+  margin: 0;
+  margin-bottom: 2px;
+
+  text-align: right;
+}
+
 .application-form-submit {
   margin-left: auto;
-  padding: 9px 22px;
+  padding: 9px 24px;
 }
 
 .popup-close {
