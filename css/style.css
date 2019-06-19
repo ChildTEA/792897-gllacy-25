@@ -21,8 +21,12 @@
 }
 
 @keyframes modalAppear {
-  0% {opacity: 0;},
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 html {
@@ -1080,6 +1084,8 @@ a.lead {
 
 .office-address .info-phone {
   line-height: 28px;
+
+  border: none;
 }
 
 .office-address-info {
