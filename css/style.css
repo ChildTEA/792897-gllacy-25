@@ -1140,6 +1140,20 @@ a.lead {
   padding: 9px 19px 11PX;
 }
 
+.contacts {
+  position: relative;
+}
+
+.contacts-interactive-map {
+  position: absolute;
+  z-index: 1;
+
+  width: 100%;
+  min-width: 1200px;
+  height: 430px;
+  margin: 0 auto;
+}
+
 .contacts-map-container {
   position: relative;
 
@@ -1161,6 +1175,7 @@ a.lead {
   position: absolute;
   top: 62px;
   right: 27px;
+  z-index: 1;
 
   width: 302px;
   padding: 29px 25px 31px;
