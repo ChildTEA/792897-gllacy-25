@@ -334,6 +334,8 @@ a.lead {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-shrink: 0;
+  align-content: flex-start;
 }
 
 .company-logo {
@@ -348,10 +350,12 @@ a.lead {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 650px;
   margin-top: 14px;
 }
 
 .site-navigation-item {
+  min-height: 45px;
   margin-right: 3px;
   margin-bottom: 10px;
 }
@@ -475,12 +479,16 @@ a.lead {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 300px;
   margin-top: 14px;
   margin-left: auto;
 }
 
 .user-navigation-item {
+  min-height: 45px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .user-navigation-item:last-of-type {
@@ -1152,6 +1160,8 @@ a.lead {
   min-width: 1200px;
   height: 430px;
   margin: 0 auto;
+
+  border: none;
 }
 
 .contacts-map-container {
@@ -1264,7 +1274,7 @@ a.lead {
 }
 
 .catalog-filter {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 
   font-weight: 500;
 }
@@ -1521,10 +1531,6 @@ a.lead {
   opacity: 1;
 }
 
-.group-fill {
-  margin-bottom: 0;
-}
-
 .filter-group-checkbox-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1586,6 +1592,7 @@ a.lead {
   -ms-flex-item-align: end;
   align-self: flex-end;
   margin-right: 40px;
+  margin-bottom: 16px;
   margin-left: auto;
 }
 
@@ -1693,6 +1700,7 @@ a.lead {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-content: flex-start;
   margin-top: 0;
   padding-top: 18px;
   padding-bottom: 25px;
@@ -1710,6 +1718,8 @@ a.lead {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-end;
   width: 267px;
   margin-right: 155px;
   padding-top: 18px;
