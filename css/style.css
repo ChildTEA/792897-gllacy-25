@@ -1296,11 +1296,14 @@ a.lead {
   color: #ffffff;
 
   cursor: pointer;
+  user-select: none;
 }
 
-.filter-group [disabled],
-.filter-group [disabled] + label {
+.filter-group :disabled,
+.filter-group :disabled + label {
   opacity: 0.4;
+
+  cursor: auto;
 }
 
 .filter-group-select-wrapper {
@@ -1499,8 +1502,8 @@ a.lead {
   opacity: 0.8;
 }
 
-.filter-group-radio-input:not([disabled]) + label:hover::before,
-.filter-group-radio-input:not([disabled]) + label:hover::after {
+.filter-group-radio-input:not(:disabled) + label:hover::before,
+.filter-group-radio-input:not(:disabled) + label:hover::after {
   opacity: 1;
 }
 
@@ -1559,8 +1562,8 @@ a.lead {
   opacity: 0.8;
 }
 
-.filter-group-checkbox-input:not([disabled]) + label:hover::before,
-.filter-group-checkbox-input:not([disabled]) + label:hover::after {
+.filter-group-checkbox-input:not(:disabled) + label:hover::before,
+.filter-group-checkbox-input:not(:disabled) + label:hover::after {
   opacity: 1;
 }
 
