@@ -839,7 +839,7 @@ a.lead {
 }
 
 .promo-card-chocolate {
-  background-color: #8d2742;
+  background-color: #805c4e;
   background-image: url("../img/promo-bg-chocolate.jpg");
   background-position: -218px -104px;
 }
@@ -1154,6 +1154,8 @@ a.lead {
   width: 1200px;
   height: 430px;
   margin: 0;
+
+  color: #323232;
 
   background-color: #f7f1d9;
 }
