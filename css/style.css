@@ -1199,19 +1199,23 @@ a.lead {
   margin-bottom: 25px;
 }
 
-.office-address .info-phone {
-  line-height: 28px;
-
-  border: none;
-}
-
 .office-address-info {
-  display: inline-block;  /* is necessary? */
-  margin-top: 1px;        /* is necessary? */
+  display: inline-block;
+  margin-top: 1px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  vertical-align: top;
+}
+
+.office-address .info-phone {
+  margin-top: 5px;
+  margin-bottom: 3px;
+
+  line-height: 22px;
+
+  border: none;
 }
 
 .office-addres-button {
