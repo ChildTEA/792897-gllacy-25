@@ -251,7 +251,7 @@ a.lead {
 }
 
 .dropdown-wrapper:hover .popup,
-.dropdown-wrapper:focus-within .popup {
+.dropdown-wrapper:focus .popup {
   display: block;
 }
 
@@ -1289,7 +1289,7 @@ a.lead {
 }
 
 .filter-group-select-wrapper:hover::after,
-.filter-group-select-wrapper:focus-within::after {
+.filter-group-select-wrapper:focus::after {
   color: #000000;
 }
 
