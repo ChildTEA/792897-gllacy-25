@@ -1546,9 +1546,13 @@ a.lead {
   margin-right: 3px;
 }
 
-.pagination-item:first-child,
-.pagination-item:last-child {
-  margin-right: 0;
+.pagination-previous {
+  margin-right: 15px;
+}
+
+.pagination-next {
+  margin-right: 0px;
+  margin-left: 13px;
 }
 
 .pagination-link {
@@ -1587,12 +1591,12 @@ a.lead {
 
 .pagination-arrow {
   display: block;
-  width: 21px;
+  width: 8px;
   height: 26px;
 
   background-image: url("../img/pagination-prev-next.svg");
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: right 8px;
   border: none;
 }
 
@@ -1608,21 +1612,15 @@ a.lead {
 }
 
 .pagination-arrow-prev {
-  margin-right: 15px;
-
   background-position: center left;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.pagination-arrow-next {
-  margin-right: 0;
-}
-
-.pagination-item .disabled,
-.pagination-item .disabled:hover,
-.pagination-item .disabled:focus,
-.pagination-item .disabled:active {
+.pagination-item:disabled,
+.pagination-item:disabled:hover,
+.pagination-item:disabled:focus,
+.pagination-item:disabled:active {
   color: rgba(255, 255, 255, 0.2);
 }
 
