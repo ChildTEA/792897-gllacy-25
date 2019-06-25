@@ -29,9 +29,8 @@ for (var i = 0; i < dots.length; i++) {
 
 var linkWriteUs = document.querySelector('.office-addres-button');
 var modalWriteUs = document.querySelector('.modal-write-us');
-var modalWriteUsForm = document.querySelector('.application-form');
-var popupCloseWriteUs = document.querySelector('.modal-write-us .popup-close');
-var applicationForm = document.querySelector('.application-form');
+var applicationForm = modalWriteUs.querySelector('.application-form');
+var popupCloseWriteUs = applicationForm.querySelector('.modal-write-us .popup-close');
 var inputName = applicationForm.querySelector('[name="author-name"]');
 var inputEmail = applicationForm.querySelector('[name="author-email"]');
 var inputMessage = applicationForm.querySelector('[name="author-message"]');
@@ -76,25 +75,28 @@ linkWriteUs.addEventListener('click', function (evt) {
 popupCloseWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
   modalWriteUs.classList.remove('modal-show');
-  modalWriteUsForm.classList.remove('popup-error');
+  applicationForm.classList.remove('popup-error');
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27 && modalWriteUs.classList.contains('modal-show')) {
     evt.preventDefault();
     modalWriteUs.classList.remove('modal-show');
-    modalWriteUsForm.classList.remove('popup-error');
+    applicationForm.classList.remove('popup-error');
   }
 });
 
 
 /* Невалидная форма */
 
-applicationForm.addEventListener('submit', function(evt) {
+applicationSubmit.addEventListener('click', function(evt) {
   if (!inputName.value || !inputEmail.value || !inputMessage.value) {
     evt.preventDefault();
-    modalWriteUsForm.classList.remove('popup-error');
-    modalWriteUsForm.offsetWidth = modalWriteUsForm.offsetWidth;
-    modalWriteUsForm.classList.add('popup-error');
+    applicationForm.classList.remove('popup-error');
+    applicationForm.offsetWidth = applicationForm.offsetWidth;
+    applicationForm.classList.add('popup-error');
+  } else {
+    localStorage.setItem('userName') = inputName.value;
+    localStorage.setItem('userEmail') = inputEmail.value;
   }
 });
