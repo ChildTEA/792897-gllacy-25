@@ -1280,9 +1280,6 @@ a.lead {
   width: 11px;
   height: 10px;
 
-  white-space: nowrap;
-  text-overflow: ellipsis;
-
   border-top: 10px solid;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
@@ -1295,12 +1292,13 @@ a.lead {
 
 .filter-group-select {
   width: 194px;
-  padding-right: 28px;
+  padding-right: 25px;
   overflow: hidden;
 
   font: inherit;
   line-height: 18px;
   color: inherit;
+  white-space: nowrap;
   text-overflow: ellipsis;
 
   background-color: rgba(248, 247, 244, 0.2);
