@@ -1270,29 +1270,6 @@ a.lead {
   opacity: 0.4;
 }
 
-.filter-group-select-wrapper {
-  position: relative;
-}
-
-.filter-group-select-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 13px;
-  right: 15px;
-
-  width: 11px;
-  height: 10px;
-
-  border-top: 10px solid;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-}
-
-.filter-group-select-wrapper:hover::after,
-.filter-group-select-wrapper:focus::after {
-  color: #000000;
-}
-
 .filter-group-select {
   width: 194px;
   padding-right: 25px;
@@ -1305,6 +1282,9 @@ a.lead {
   text-overflow: ellipsis;
 
   background-color: rgba(248, 247, 244, 0.2);
+  background-image: url(../img/select-down-white.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
   border: none;
   cursor: pointer;
 
@@ -1323,6 +1303,7 @@ a.lead {
   color: #323232;
 
   background-color: #ffffff;
+  background-image: url(../img/select-down-dark.svg);
 }
 
 .filter-group-select option {
@@ -1467,7 +1448,9 @@ a.lead {
 }
 
 .filter-group-radio-input:not(:disabled) + label:hover::before,
-.filter-group-radio-input:not(:disabled) + label:hover::after {
+.filter-group-radio-input:not(:disabled) + label:hover::after,
+.filter-group-radio-input:focus + label::before,
+.filter-group-radio-input:focus + label::after {
   opacity: 1;
 }
 
@@ -1522,7 +1505,8 @@ a.lead {
 }
 
 .filter-group-checkbox-input:not(:disabled) + label:hover::before,
-.filter-group-checkbox-input:not(:disabled) + label:hover::after {
+.filter-group-checkbox-input:not(:disabled) + label:hover::after,
+.filter-group-checkbox-input:focus + label::before {
   opacity: 1;
 }
 
