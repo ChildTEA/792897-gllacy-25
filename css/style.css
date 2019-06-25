@@ -235,12 +235,6 @@ a.lead {
 }
 
 .popup {
-  position: absolute;
-  top: 36px;
-  right: 0;
-  z-index: 1;
-
-  display: none;
   padding: 20px 15px;
 
   color: #323232;
@@ -250,8 +244,17 @@ a.lead {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
+.dropdown-wrapper .popup {
+  display: none;
+}
+
 .dropdown-wrapper:hover .popup,
 .dropdown-wrapper:focus .popup {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  z-index: 1;
+
   display: block;
 }
 
@@ -1745,23 +1748,20 @@ a.lead {
 
   display: none;
   width: 100%;
-  min-height: 100vh;
-  overflow: auto;
+  height: 100vh;
+  overflow-y: auto;
 
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .application-form {
-  position: fixed;
-  top: 36.1%;
-  left: 3px;
-
   display: block;
   width: 477px;
   margin: 0 auto;
   padding: 16px 24px 27px 24px;
 
   border-radius: 10px;
+  transform: translateX(2px);
 }
 
 .application-form h2 {
@@ -1828,7 +1828,9 @@ a.lead {
 }
 
 .modal-show {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   -webkit-animation-name: modalAppear;
           animation-name: modalAppear;
