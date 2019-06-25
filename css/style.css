@@ -1277,8 +1277,11 @@ a.lead {
   top: 13px;
   right: 15px;
 
-  width: 10px;
+  width: 11px;
   height: 10px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
   border-top: 10px solid;
   border-right: 5px solid transparent;
@@ -1292,7 +1295,7 @@ a.lead {
 
 .filter-group-select {
   width: 194px;
-  padding-right: 14px;
+  padding-right: 28px;
   overflow: hidden;
 
   font: inherit;
@@ -1549,7 +1552,7 @@ a.lead {
 }
 
 .pagination-next {
-  margin-right: 0px;
+  margin-right: 0;
   margin-left: 13px;
 }
 
