@@ -30,7 +30,7 @@ for (var i = 0; i < dots.length; i++) {
 var linkWriteUs = document.querySelector('.office-addres-button');
 var modalWriteUs = document.querySelector('.modal-write-us');
 var applicationForm = modalWriteUs.querySelector('.application-form');
-var popupCloseWriteUs = applicationForm.querySelector('.modal-write-us .popup-close');
+var popupCloseWriteUs = applicationForm.querySelector('.popup-close');
 var inputName = applicationForm.querySelector('[name="author-name"]');
 var inputEmail = applicationForm.querySelector('[name="author-email"]');
 var inputMessage = applicationForm.querySelector('[name="author-message"]');
