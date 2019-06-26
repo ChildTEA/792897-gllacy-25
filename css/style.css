@@ -1629,10 +1629,11 @@ a.lead {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   width: 267px;
   margin-right: 155px;
-  padding-top: 18px;
+  padding-top: 17px;
+  padding-left: 1px;
 }
 
 .social-button {
@@ -1646,26 +1647,30 @@ a.lead {
 
   color: rgba(255, 255, 255, 0.8);
 
-  background-repeat: no-repeat;
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
+  border: none;
 }
 
 .social-button:hover,
 .social-button:focus {
   color: rgb(255, 255, 255);
-
-  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .social-button:active {
   color: rgba(255, 255, 255, 0.9);
-
-  border-color: rgba(255, 255, 255, 0.7);
 }
 
 .social-button svg {
   fill: currentColor;
+}
+
+.social-button .social-border {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.social-button:hover .social-border,
+.social-button:focus .social-border,
+.social-button:active .social-border {
+  fill: rgba(255, 255, 255, 0.7);
 }
 
 .footre-references-wraper {
