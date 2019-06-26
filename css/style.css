@@ -1382,6 +1382,7 @@ a.lead {
   position: absolute;
   top: 8px;
 
+  padding: 0;
   width: 20px;
   height: 20px;
 
