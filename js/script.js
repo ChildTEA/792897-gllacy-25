@@ -96,7 +96,7 @@ applicationSubmit.addEventListener('click', function(evt) {
     applicationForm.offsetWidth = applicationForm.offsetWidth;
     applicationForm.classList.add('popup-error');
   } else {
-    localStorage.setItem('userName') = inputName.value;
-    localStorage.setItem('userEmail') = inputEmail.value;
+    localStorage.setItem('userName', inputName.value);
+    localStorage.setItem('userEmail', inputEmail.value);
   }
 });
