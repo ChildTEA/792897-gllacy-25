@@ -1390,6 +1390,7 @@ a.lead {
   border: 8px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 }
 
 .filter-range-min-toggle {
