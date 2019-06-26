@@ -1382,15 +1382,15 @@ a.lead {
   position: absolute;
   top: 8px;
 
-  padding: 0;
   width: 20px;
   height: 20px;
+  padding: 0;
 
   background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
 }
 
 .filter-range-min-toggle {
@@ -1660,8 +1660,9 @@ a.lead {
 }
 
 .social-button svg {
-  fill: currentColor;
   pointer-events: none;
+
+  fill: currentColor;
 }
 
 .social-button .social-border {
@@ -1749,10 +1750,10 @@ a.lead {
   width: 477px;
   max-height: 100vh;
   padding: 16px 24px 27px 24px;
+  overflow-y: auto;
 
   border-radius: 10px;
   transform: translateX(2px);
-  overflow-y: auto;
 }
 
 .application-form h2 {
