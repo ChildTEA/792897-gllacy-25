@@ -1096,18 +1096,6 @@ a.lead {
   position: relative;
 }
 
-.contacts-interactive-map {
-  position: absolute;
-  z-index: 1;
-
-  width: 100%;
-  min-width: 1200px;
-  height: 430px;
-  margin: 0 auto;
-
-  border: none;
-}
-
 .contacts-map-container {
   position: relative;
 
