@@ -1605,10 +1605,10 @@ a.lead {
           transform: rotate(180deg);
 }
 
-.pagination-item:disabled,
-.pagination-item:disabled:hover,
-.pagination-item:disabled:focus,
-.pagination-item:disabled:active {
+.pagination-item:not([href]),
+.pagination-item:not([href]):hover,
+.pagination-item:not([href]):focus,
+.pagination-item:not([href]):active {
   color: rgba(255, 255, 255, 0.2);
 }
 
